@@ -1,0 +1,101 @@
+.form {
+    
+    &__grid {
+        @apply grid grid-cols-10 gap-6;
+        &-col {
+            @apply col-span-full grid gap-6 items-center;
+            label {
+                @apply pl-0 pr-0 lg:pl-2 lg:pr-4 text-B20 font-bold text-black20;
+            }
+            input, textarea {
+                @apply border rounded-lg py-2 px-4 box-border w-full;
+                @apply transition-all duration-500 ease-in-out bg-transparent text-white font-bold text-B24;
+                &::placeholder {
+                    @apply text-black40 font-light;
+                }
+                
+                &:not(:placeholder-shown) {
+                    @apply border-primary100;
+                }
+                &:placeholder-shown {
+                    @apply border-white;
+                }
+                &:focus, &:hover {
+                    @apply border-primary100 outline-0;
+                }
+             
+    
+            }
+            textarea {
+                @apply h-[224px];
+            }
+            &--col-3 {
+                @apply grid-cols-1 lg:grid-cols-3;
+            }
+            &--col-12 {
+                @apply grid-cols-1;
+            }
+            &--col-6 {
+                @apply grid-cols-1 lg:grid-cols-2;
+            }
+        }
+        
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+// validation errors ourput bottom of form
+.wpcf7-not-valid-tip {
+    @apply mt-0 absolute text-xs left-0 -bottom-4 font-bold;
+    @apply transition-all duration-500 ease-in-out;
+}
+
+.wpcf7-response-output {
+    @apply hidden #{!important};
+}
+
+.wpcf7-validation-errors {
+    @apply text-color1  mt-14 border-red-900 rounded border w-fit mx-auto bg-white transition-all text-xs md:text-base #{!important};
+
+}
+.wpcf7-list-item {
+    @apply m-0;
+}
+.wpcf7-form-control-wrap {
+    @apply flex h-auto max-lg:justify-end;
+}
+//checkboxes
+.wpcf7-acceptance {
+   @apply relative text-xs #{!important};
+   label {
+    @apply text-base font-light p-0 flex h-fit;
+        span:before {
+        @apply animate-scaleUp text-lg;
+        @apply flex items-center justify-center transition;
+        @apply h-[32px] w-[32px];
+        @apply shrink-0;
+        @apply relative;
+        @apply mr-2.5 lg:mr-[15px];
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%23F9B208' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        @apply bg-no-repeat bg-center;
+            
+        }
+    }
+   a {
+        @apply underline transition-colors duration-500;
+        &:hover {
+            @apply text-color4;
+        }
+   }
+   .wpcf7-list-item-label {
+       @apply cursor-pointer flex items-center;
+   }
+}
+.wpcf7-acceptance label > input:checked + span:before {
+    @apply animate-scaleUp;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5 13L14.1625 20L10.5 16.5' stroke='%23F9B208' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%23F9B208' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

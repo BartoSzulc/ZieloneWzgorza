@@ -1,0 +1,47 @@
+.swiper {
+   
+    &-button {
+        @apply cursor-pointer;
+        svg path {
+            @apply transition-all duration-500 ease-in-out;
+        }
+        &:hover {
+            svg path {
+                @apply fill-color3;
+            }
+        }
+    }
+    &-pagination {
+        &-bullets {
+            @apply w-fit right-5 bottom-5 lg:right-30 left-auto lg:bottom-30 flex justify-center lg:space-x-5 space-x-2 #{!important};
+        }
+        &-bullet {
+            @apply inline-block h-2.5 w-2.5 lg:h-5 lg:w-5 rounded-full m-0 opacity-100 bg-white border border-solid border-white transition-all duration-500 ease-in-out #{!important};
+            &-active {
+                @apply bg-color3 border-color3 dark:bg-color5 dark:border-color5 #{!important};
+            }
+           
+        }
+    }
+}
+.heroSwiper__counter {
+    @apply font-secondary text-h6 lg:text-[34px] lg:leading-[44px] font-semibold text-color1;
+    .swiper-pagination-current {
+        @apply text-color3;
+    }
+}
+.heroSwiper__nav {
+    svg {
+        path {
+            @apply transition-all duration-500 ease-in-out fill-color5;
+        }
+    }
+    &--prev, &--next {
+        @apply cursor-pointer;
+        &:hover {
+            svg path {
+                @apply fill-color3;
+            }
+        }
+    }
+}

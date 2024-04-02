@@ -1,0 +1,59 @@
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/glightbox/dist/css/glightbox.css";
+@import '../../node_modules/slim-select/src/slim-select/slimselect.scss';
+
+// - Vendor
+@import 'vendor/frameworks';
+
+// // - Abstracts 
+@import 'abstracts/aos';
+// @import 'abstracts/animations';
+@import 'abstracts/fonts';
+
+// // - Components
+@import 'components/buttons';
+@import 'components/menu';
+// @import 'components/posts';
+// @import 'components/navi';
+@import 'components/form';
+// @import 'components/swiper';
+
+// // - Pages 
+@import 'pages/home';
+@import 'pages/single';
+// @import 'pages/contact';
+
+@import 'sections/footer';
+
+body {
+    @apply transition-all duration-500 ease-in-out font-primary;
+    @apply bg-[#222222];
+    // &.development {
+    //     section {
+    //         outline: 0.5px solid red;
+    //     }
+    // }
+}
+
+.ul-custom {
+    li {
+        @apply flex items-center;
+        &:before {
+            content:"";
+            @apply w-4 h-4 bg-primary100 rounded-full mr-2;
+        }
+    }
+    &--center {
+        li {
+            @apply flex items-center justify-center max-lg:flex-col;
+            &:before {
+                
+                @apply max-lg:mr-0 max-lg:mb-2;
+            }
+            
+        } 
+    }
+}
+.banner {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0) 0%, #000000 100%);
+}
