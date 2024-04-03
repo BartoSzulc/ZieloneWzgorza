@@ -2,7 +2,7 @@
 .mobile-menu {
     @apply opacity-0 top-0 left-0 w-full h-[100dvh] z-10;
     @apply transition-all duration-500 ease-in-out;
-    @apply bg-black80/80 pointer-events-none;
+    @apply pointer-events-none;
     
     &.active {
         @apply pointer-events-auto opacity-100;

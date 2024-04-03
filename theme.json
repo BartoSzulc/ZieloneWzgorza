@@ -1251,94 +1251,69 @@
           "slug": "rose-950"
         },
         {
-          "color": "rgb(13, 14, 22, 0.1);",
-          "name": "ColorObramowanie",
-          "slug": "colorobramowanie"
+          "color": "#fde9ba",
+          "name": "Primary 50",
+          "slug": "primary-50"
         },
         {
-          "color": "#0d0e16",
-          "name": "Color1",
-          "slug": "color1"
+          "color": "#c1c0b9",
+          "name": "Primary 100",
+          "slug": "primary-100"
         },
         {
-          "color": "#4eb2b3",
-          "name": "Color2",
-          "slug": "color2"
+          "color": "#a6a59a",
+          "name": "Primary 200",
+          "slug": "primary-200"
         },
         {
-          "color": "#00c1e7",
-          "name": "Color3",
-          "slug": "color3"
+          "color": "#8a897b",
+          "name": "Primary 300",
+          "slug": "primary-300"
         },
         {
-          "color": "#f3f3f3",
-          "name": "Color4",
-          "slug": "color4"
+          "color": "#6f6d5c",
+          "name": "Primary 400",
+          "slug": "primary-400"
         },
         {
-          "color": "#fff",
-          "name": "Color5",
-          "slug": "color5"
+          "color": "#6e8c03",
+          "name": "Primary 500",
+          "slug": "primary-500"
         },
         {
-          "color": "#0f1425",
-          "name": "Color6",
-          "slug": "color6"
+          "color": "#e8d7c1",
+          "name": "Secondary 100",
+          "slug": "secondary-100"
         },
         {
-          "color": "#8f94a5",
-          "name": "Color7",
-          "slug": "color7"
+          "color": "#d3b38b",
+          "name": "Secondary 300",
+          "slug": "secondary-300"
         },
         {
-          "color": "#f9b208",
-          "name": "Primary100",
-          "slug": "primary100"
+          "color": "#bf8f54",
+          "name": "Secondary 500",
+          "slug": "secondary-500"
         },
         {
-          "color": "#f9b208",
-          "name": "Primary80",
-          "slug": "primary80"
+          "color": "#3d3d3d",
+          "name": "Texter DEFAULT",
+          "slug": "texter-default"
         },
         {
-          "color": "#fbcb57",
-          "name": "Primary60",
-          "slug": "primary60"
+          "color": "#cee4f2",
+          "name": "LightSky DEFAULT",
+          "slug": "lightsky-default"
         },
         {
-          "color": "#fcd77f",
-          "name": "Primary40",
-          "slug": "primary40"
+          "color": "#274001",
+          "name": "DeepForest DEFAULT",
+          "slug": "deepforest-default"
         },
         {
-          "color": "#fde3a6",
-          "name": "Primary20",
-          "slug": "primary20"
-        },
-        {
-          "color": "#b8b8b8",
-          "name": "Black10",
-          "slug": "black10"
-        },
-        {
-          "color": "#222222",
-          "name": "Black80",
-          "slug": "black80"
-        },
-        {
-          "color": "#525252",
-          "name": "Black60",
-          "slug": "black60"
-        },
-        {
-          "color": "#7a7a7a",
-          "name": "Black40",
-          "slug": "black40"
-        },
-        {
-          "color": "#a3a3a3",
-          "name": "Black20",
-          "slug": "black20"
+          "color": "#d3d3af",
+          "name": "Olive DEFAULT",
+          "slug": "olive-default"
         }
       ]
     },
@@ -1364,13 +1339,13 @@
       "customFontSize": false,
       "fontFamilies": [
         {
-          "fontFamily": "Bai Jamjuree,Helvetica,Arial,sans-serif",
-          "name": "Bai Jamjuree",
+          "fontFamily": "Montserrat,Helvetica,Arial,sans-serif",
+          "name": "Montserrat",
           "slug": "primary"
         },
         {
-          "fontFamily": "Saira Extra Condensed,Helvetica,Arial,sans-serif",
-          "name": "Saira Extra Condensed",
+          "fontFamily": "DM Sans,Helvetica,Arial,sans-serif",
+          "name": "DM Sans",
           "slug": "secondary"
         }
       ],
@@ -1441,24 +1416,9 @@
           "slug": "9xl"
         },
         {
-          "name": "menu",
-          "size": "18px",
-          "slug": "menu"
-        },
-        {
-          "name": "cytat",
-          "size": "20px",
-          "slug": "cytat"
-        },
-        {
-          "name": "desc",
-          "size": "1.125rem",
-          "slug": "desc"
-        },
-        {
-          "name": "button",
-          "size": "0.75rem",
-          "slug": "button"
+          "name": "B16",
+          "size": "16px",
+          "slug": "B16"
         },
         {
           "name": "B20",
@@ -1466,38 +1426,33 @@
           "slug": "B20"
         },
         {
-          "name": "B24",
-          "size": "24px",
-          "slug": "B24"
-        },
-        {
           "name": "BQuote",
-          "size": "28px",
+          "size": "16px",
           "slug": "BQuote"
         },
         {
           "name": "h5",
-          "size": "clamp(1.5rem, 5vw - 1rem, 2rem)",
+          "size": "clamp(1.25rem, 0.446vw + 0.964rem, 1.5rem);",
           "slug": "h5"
         },
         {
           "name": "h4",
-          "size": "clamp(2rem, 3vw + 1rem, 2.75rem);",
+          "size": "clamp(1.5rem, 0.446vw + 1.214rem, 1.75rem);",
           "slug": "h4"
         },
         {
           "name": "h3",
-          "size": "clamp(2.75rem, 4vw + 1rem, 4rem);",
+          "size": "clamp(1.75rem, 1.339vw + 0.893rem, 2.5rem);",
           "slug": "h3"
         },
         {
           "name": "h2",
-          "size": "clamp(4rem, 4vw + 1.5rem, 4.5rem);",
+          "size": "clamp(2.5rem, 0.893vw + 1.929rem, 3rem);",
           "slug": "h2"
         },
         {
           "name": "h1",
-          "size": "clamp(4.5rem, 5.5vw + 2rem, 6.625rem);",
+          "size": "clamp(3rem, 1.786vw + 1.857rem, 4rem);",
           "slug": "h1"
         }
       ]

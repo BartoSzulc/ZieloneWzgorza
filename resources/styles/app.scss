@@ -15,7 +15,7 @@
 @import 'components/menu';
 // @import 'components/posts';
 // @import 'components/navi';
-@import 'components/form';
+//@import 'components/form';
 // @import 'components/swiper';
 
 // // - Pages 
@@ -26,8 +26,8 @@
 @import 'sections/footer';
 
 body {
-    @apply transition-all duration-500 ease-in-out font-primary;
-    @apply bg-[#222222];
+    @apply transition-all duration-500 ease-in-out font-secondary text-texter;
+    @apply bg-white;
     // &.development {
     //     section {
     //         outline: 0.5px solid red;
@@ -40,7 +40,6 @@ body {
         @apply flex items-center;
         &:before {
             content:"";
-            @apply w-4 h-4 bg-primary100 rounded-full mr-2;
         }
     }
     &--center {
@@ -55,5 +54,14 @@ body {
     }
 }
 .banner {
-    background: linear-gradient(0deg, rgba(34, 34, 34, 0) 0%, #000000 100%);
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0) 0%, #000000 100%);
+
+}
+.text-shadow-hero {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 2px rgba(110, 140, 3, 0.1);
+    -webkit-leading-trim: both;
+    -webkit-text-edge: cap;
+    paint-order: stroke fill;
+
 }

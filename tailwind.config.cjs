@@ -21,55 +21,61 @@ module.exports = {
       '3xl': '1440px',
       '4xl': '1600px',
       '5xl': '1920px',
-      'logo': '1744px',
       
     },
     fontFamily: {
-      primary: ['Bai Jamjuree', 'Helvetica', 'Arial', 'sans-serif'],
-      secondary: ['Saira Extra Condensed', 'Helvetica', 'Arial', 'sans-serif'],
+      primary: ['Montserrat', 'Helvetica', 'Arial', 'sans-serif'],
+      secondary: ['DM Sans', 'Helvetica', 'Arial', 'sans-serif'],
 
     },
     letterSpacing: {
       tightest: '1px',
-      wide: '10.4px',
     },
     extend: {
+      borderRadius: {
+        'hero': '0 0 128px 128px',
+      },
       gridTemplateColumns: {
         // Simple 16 column grid
-        'logo': 'repeat(6, minmax(264px, 264px));',
-
-      
+        //'logo': 'repeat(6, minmax(264px, 264px));',
       },
       boxShadow: {
-        'cien-1': '0px 0px 32px rgba(0, 0, 0, 0.2);',
+        'cien-1': '0px 24px 48px rgba(37, 34, 0, 0.0816067);',
        
       },
       dropShadow: {
-        'cien-1': '10px 10px 10px 0px rgba(255, 248, 50, 0.2);',
+        'lg': '0px 4px 8px rgba(0, 0, 0, 0.5);',
       },
     colors: {
       
       current: "currentColor",
       transparent: "transparent",
-      colorObramowanie: 'rgb(13, 14, 22, 0.1);',
-      color1: '#0D0E16',
-      color2: '#4EB2B3',
-      color3: '#00C1E7',
-      color4: '#F3F3F3',
-      color5: "#FFF",
-      color6: "#0F1425",
-      color7: '#8F94A5',
-      primary100: '#F9B208',
-      primary80: '#F9B208',
-      primary60: '#FBCB57',
-      primary40: '#FCD77F',
-      primary20: '#FDE3A6',
-      black10: '#B8B8B8',
-      black80: '#222222',
-      black60: '#525252',
-      black40: '#7A7A7A',
-      black20: '#A3A3A3',
-
+      primary: {
+        50: "#FDE9BA",
+        100: "#C1C0B9",
+        200: "#A6A59A",
+        300: "#8A897B",
+        400: "#6F6D5C",
+        500: "#6E8C03",
+      },
+      secondary: {
+       
+        100: "#E8D7C1",
+        300: "#D3B38B",
+        500: "#BF8F54",
+      },
+      texter: {
+        DEFAULT: '#3D3D3D',
+      },
+      lightSky: {
+        DEFAULT: '#CEE4F2',
+      },
+      deepForest: {
+        DEFAULT: '#274001',
+      },
+      olive: {
+        DEFAULT: '#D3D3AF',
+      },
     },
     spacing: {
       'half': '50px',
@@ -77,67 +83,45 @@ module.exports = {
       'full': '100px',
       '30': '30px',
       '60': '60px',
+      '72': '72px',
     },
     fontSize: {
-      // 'smallest': [12, {
-      //   lineHeight: 1.67,
-      // }],
-      // 'caption':[14, {
-      //   lineHeight: 1.214,
-      //   letterSpacing: '0.05em',
-      // }],
-      'menu' : ['18px', {
-        lineHeight: 1.444, // Unitless, relative to the font size
-        letterSpacing: '0.64px', // Rounded from 0.046875rem
-        fontWeight: 600,
+      'B16': ['16px', {
+        lineHeight: 1.5,
       }],
-      'cytat' : ['20px', {
-          lineHeight: 1.7, // Unitless, relative to the font size
-          fontWeight: 400,
-          fontStyle: 'italic',
-      }],
-      'base': ['1rem', 1.5], // Unitless, relative to the font size
-      'desc': ['1.125rem', {
-        lineHeight: 1.67, // Unitless, relative to the font size
-      }],
-      'button': [
-        '0.75rem', { // Converted font size to rem
-          lineHeight: '1.67', // You could use 1.25rem or keep it unitless as 1.25
-          letterSpacing: '3.2px', // Converted letter spacing to rem
-          fontWeight: 700,
-        }
-      ],
-      // https://modern-fluid-typography.vercel.app/
-      // where u can get fluid typography
       'B20': ['20px', {
-        lineHeight: '30px',
+        lineHeight: 1.5,
       }],
-      'B24': ['24px', {
-        lineHeight: '36px',
-      }],
-      'BQuote': ['28px', {
-        lineHeight: '42px',
+      'BQuote': ['16px', {
+        lineHeight: 1.5,
         fontStyle: 'italic',
       }],
-      'h5': ['clamp(1.5rem, 5vw - 1rem, 2rem)', {
-        lineHeight: 'clamp(2rem, 5vw, 2.813rem);',
-        fontWeight: 700,
+      // 24px
+      'h5': ['clamp(1.25rem, 0.446vw + 0.964rem, 1.5rem);', {
+        lineHeight: 'clamp(1.75rem, 0.679vw + 1.316rem, 2.13rem);',
+        fontWeight: 400,
       }],
-      'h4': ['clamp(2rem, 3vw + 1rem, 2.75rem);', {
-        lineHeight: 'clamp(2.813rem, 4vw + 1rem, 3.563rem);',
-        fontWeight: 700,
+      // 28px
+      'h4': ['clamp(1.5rem, 0.446vw + 1.214rem, 1.75rem);', {
+        lineHeight: 'clamp(2.13rem, 0.54vw + 1.784rem, 2.432rem);',
+        fontWeight: 600,
       }],
-      'h3': ['clamp(2.75rem, 4vw + 1rem, 4rem);', {
-        lineHeight: 'clamp(3.563rem, 5vw + 1rem, 4.813rem);',
-        fontWeight: 700,
+      // 40px
+      'h3': ['clamp(1.75rem, 1.339vw + 0.893rem, 2.5rem);', {
+        lineHeight: 'clamp(2.432rem, 1.906vw + 1.212rem, 3.5rem);',
+        fontWeight: 600,
       }],
-      'h2': ['clamp(4rem, 4vw + 1.5rem, 4.5rem);', {
-        lineHeight: 'clamp(4.813rem, 5vw + 1.25rem, 5.375rem);',
+      // 48px
+      'h2': ['clamp(2.5rem, 0.893vw + 1.929rem, 3rem);', {
+        lineHeight: 'clamp(3.5rem, 1.196vw + 2.734rem, 4.17rem);',
         fontWeight: 700,
+        letterSpacing: '0.05em',
       }],
-      'h1': ['clamp(4.5rem, 5.5vw + 2rem, 6.625rem);', {
-        lineHeight: 'clamp(5.375rem, 5.5vw + 2rem, 7.938rem);',
+      // 64px
+      'h1': ['clamp(3rem, 1.786vw + 1.857rem, 4rem);', {
+        lineHeight: 'clamp(4.17rem, 2.554vw + 2.536rem, 5.6rem);',
         fontWeight: 700,
+        letterSpacing: '0.05em',
       }],
     },
     keyframes: {

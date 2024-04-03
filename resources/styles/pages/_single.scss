@@ -1,6 +1,6 @@
 .builder {
     .wysiwyg {
-        @apply text-color1;
+        @apply text-texter;
         > * + * {
             @apply mt-5;
         }

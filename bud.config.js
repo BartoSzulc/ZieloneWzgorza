@@ -23,7 +23,7 @@ export default async (app) => {
    *
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
    */
-  app.setPublicPath('/wp-content/themes/zielonewzgorza/public/');
+  app.setPublicPath('/wp-content/themes/ZieloneWzgorza/public/');
 
   /**
    * Development server settings
@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('http://zielonewzgrza.local/')
+    .setProxyUrl('http://zielonewzgorza.local/')
     .watch(['resources/views', 'app']);
 
   /**
