@@ -1,5 +1,35 @@
 .btn {
+    @apply text-B20 flex items-center px-6 h-14 transition-all duration-500 ease-in-out text-white rounded-2xl font-normal gap-3;
     &--primary {
-        @apply text-B20 flex items-center;
+        @apply bg-primary-500;
+        &:hover {
+            @apply bg-primary-400;
+            box-shadow: 0px 4px 12px rgba(83, 81, 61, 0.3);
+        }
+        &.disabled {
+            @apply bg-primary-100 text-primary-200;
+            svg {
+                path {
+                    @apply fill-primary-200;
+                }
+            }
+        }
     }
+    &--svg {
+        @apply pl-6 pr-4;
+    }
+    &--secondary {
+        @apply bg-primary-10 text-primary-500;
+        &:hover {
+            @apply bg-[#D6DFB8]/50;
+            box-shadow: 0px 4px 12px rgba(83, 81, 61, 0.3);
+        }
+        &.disabled {
+            @apply bg-primary-100 text-primary-200/50;
+            svg {
+                @apply opacity-50
+            }
+        }
+    }
+    
 }

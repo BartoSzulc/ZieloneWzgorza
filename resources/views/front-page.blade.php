@@ -64,7 +64,45 @@
                        <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
                     </div>
                     <div class="inline-flex items-center justify-center">
-                        <a href="" class="btn btn-primary">Dowiedz się więcej</a>
+                        <a href="" class="btn btn--secondary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-span-1 text-center">
+                <div class="flex flex-col gap-4 p-2">
+                    <div class="flex flex-col gap-2 items-center title">
+                        <div class="icon">
+                            @svg('images.fizjo_icon')
+                        </div>
+                        <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
+                            <h3>Turnusy rehabilitacyjne</h3>
+                        </div>
+                    </div>
+                    <div class="text-B16">
+                       <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <a href="" class="btn btn--secondary">Poznaj ofertę</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-span-1 text-center">
+                <div class="flex flex-col gap-4 p-2">
+                    <div class="flex flex-col gap-2 items-center title">
+                        <div class="icon">
+                            @svg('images.fizjo_icon')
+                        </div>
+                        <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
+                            <h3>Fizjoterapia</h3>
+                        </div>
+                    </div>
+                    <div class="text-B16">
+                       <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
+                    </div>
+                    <div class="inline-flex items-center justify-center">
+                        <a href="" class="btn btn--secondary">Poznaj ofertę</a>
                     </div>
                 </div>
                 
