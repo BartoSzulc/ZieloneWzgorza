@@ -88,13 +88,16 @@ module.exports = {
     },
     fontSize: {
       'B16': ['16px', {
-        lineHeight: 1.5,
+        lineHeight: '22.4px',
       }],
       'B20': ['20px', {
-        lineHeight: 1.5,
+        lineHeight: '28px',
+      }],
+      'B12': ['12px', {
+        lineHeight: '18px',
       }],
       'BQuote': ['16px', {
-        lineHeight: 1.5,
+        lineHeight: '24px',
         fontStyle: 'italic',
       }],
       // 24px

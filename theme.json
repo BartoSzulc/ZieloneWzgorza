@@ -1431,6 +1431,11 @@
           "slug": "B20"
         },
         {
+          "name": "B12",
+          "size": "12px",
+          "slug": "B12"
+        },
+        {
           "name": "BQuote",
           "size": "16px",
           "slug": "BQuote"

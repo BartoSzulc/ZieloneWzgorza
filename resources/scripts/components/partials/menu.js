@@ -1,12 +1,5 @@
-import Component from "./Component";
+export function initMenu() {
 
-export default class Menu extends Component {
-
-    constructor() {
-        super();
-    }
-    
-    init() {
         const isMobile = window.innerWidth < 1024;
         let isOpen = false; // Track if the menu is open
 
@@ -52,5 +45,5 @@ export default class Menu extends Component {
         document.querySelectorAll(".menu-item a[href]:not([href*='/oferta/']), .menu-item a[href^='/oferta/#']").forEach((menuItem) => {
             menuItem.addEventListener("click", closeMenu);
         });
-    }
+
 }

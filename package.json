@@ -32,6 +32,7 @@
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "slim-select": "^2.8.1",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "vanilla-lazyload": "^19.1.2"
   }
 }
