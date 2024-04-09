@@ -17,7 +17,7 @@
         </div>
     </div>
 </section>
-<section class="home__intro py-[90px]">
+<section class="home__intro pt-[90px] pb-10">
     <div class="container">
         <div class="grid grid-cols-12 gap-6">
             <div class="col-span-6 relative flex items-center justify-center">
@@ -44,15 +44,15 @@
         </div>
     </div>
 </section>
-<section class="home__our--offer py-72">
+<section class="home__our--offer my-72">
     <div class="container">
-        <div class="text-center text-h3 lg:text-h2 mb-8">
+        <div class="text-center text-h3 lg:text-h2 mb-8 font-primary">
             <h2>Nasza oferta</h2>
         </div>
         <div class="grid grid-cols-3 gap-6">
             <div class="col-span-1 text-center">
-                <div class="flex flex-col gap-4 p-2">
-                    <div class="flex flex-col gap-2 items-center title">
+                <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+                    <div class="flex flex-col gap-2 items-center title justify-center">
                         <div class="icon">
                             @svg('images.fizjo_icon')
                         </div>
@@ -63,15 +63,15 @@
                     <div class="text-B16">
                        <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
                     </div>
-                    <div class="inline-flex items-center justify-center">
-                        <a href="" class="btn btn--secondary">Dowiedz się więcej</a>
+                    <div class="inline-flex items-center justify-center grow-0 mt-auto">
+                        <a href="" class="btn btn--secondary">Poznaj ofertę</a>
                     </div>
                 </div>
                 
             </div>
             <div class="col-span-1 text-center">
-                <div class="flex flex-col gap-4 p-2">
-                    <div class="flex flex-col gap-2 items-center title">
+                <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+                    <div class="flex flex-col gap-2 items-center title justify-center">
                         <div class="icon">
                             @svg('images.fizjo_icon')
                         </div>
@@ -80,32 +80,85 @@
                         </div>
                     </div>
                     <div class="text-B16">
-                       <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
+                       <p> Zapraszamy na turnusy rehabilitacyjne z pełnym pakietem usług: od 7 do 14 noclegów, 3 posiłki dziennie, zabiegi rehabilitacyjne, a także liczne aktywności zwiększające efektywność kuracji.</p>
                     </div>
-                    <div class="inline-flex items-center justify-center">
+                    <div class="inline-flex items-center justify-center grow-0 mt-auto">
                         <a href="" class="btn btn--secondary">Poznaj ofertę</a>
                     </div>
                 </div>
                 
             </div>
             <div class="col-span-1 text-center">
-                <div class="flex flex-col gap-4 p-2">
-                    <div class="flex flex-col gap-2 items-center title">
+                <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+                    <div class="flex flex-col gap-2 items-center title justify-center">
                         <div class="icon">
                             @svg('images.fizjo_icon')
                         </div>
                         <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
-                            <h3>Fizjoterapia</h3>
+                            <h3>Noclegi</h3>
                         </div>
                     </div>
                     <div class="text-B16">
-                       <p> W "Zielonych Wzgórzach" pragniemy zaoferować naszym gościom kompleksową opiekę zdrowotną, dzięki której pobyt u nas stanie się nie tylko okazją do wypoczynku, ale również do poprawy kondycji fizycznej i zdrowotnej. </p>
+                       <p>Oferujemy 7 pokoi standardowych i 4 apartamenty, każdy z nich zaprojektowany z myślą o Twoim komforcie. Do wyboru pokoje z łazienkami wyposażonymi w wannę lub kabinę prysznicową, a każdy apartament posiada balkon z widokiem na stawy i las.</p>
                     </div>
-                    <div class="inline-flex items-center justify-center">
+                    <div class="inline-flex items-center justify-center grow-0 mt-auto">
                         <a href="" class="btn btn--secondary">Poznaj ofertę</a>
                     </div>
                 </div>
                 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home__uslugi my-72 relative">
+    <div class="container">
+        <div class="w-full text-center text-h3 lg:text-h2 font-primary mb-8">
+            <h2>Usługi rehabilitacyjne</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-x-6 gap-y-12">
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            @include('partials.usluga')
+            <div class="col-span-full flex items-center justify-center">
+                <div class="inline-flex">
+                    <a href="" class="btn btn--primary btn--svg"><span>Chcę poznać szczegóły</span> @svg('images.icons.hand')</a>
+                </div>
+            </div>
+              
+                
+        </div>
+    </div>
+</section>
+<section class="home__apartments">
+    <div class="container">
+        <div class="w-full text-center text-h3 lg:text-h2 font-primary mb-8">
+            <h2>Pokoje i apartamenty</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-1">
+                <div class="flex flex-col gap-4 items-center justify-center text-center px-4 pt-4 pb-6 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+                    <div class="slider">
+                        <img class="h-[328px] object-cover object-center rounded-3xl" src="{{ asset('images/usluga-1.png')}}" alt="">
+
+                    </div>
+                    <div class="text text-primary-500">
+                        <div class="text-h5 lg:text-h4 font-primary">
+                            <h3>Eletroterapia</h3>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+            <div class="col-span-full flex items-center justify-center">
+                <div class="inline-flex">
+                    <a href="" class="btn btn--primary btn--svg"><span>Szukam noclegu</span> @svg('images.icons.bed')</a>
+                </div>
             </div>
         </div>
     </div>

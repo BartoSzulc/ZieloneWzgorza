@@ -41,6 +41,7 @@ module.exports = {
       },
       boxShadow: {
         'cien-1': '0px 24px 48px rgba(37, 34, 0, 0.0816067);',
+        'form': '0px 12px 32px rgba(37, 34, 0, 0.08);',
        
       },
       dropShadow: {
@@ -52,11 +53,11 @@ module.exports = {
       transparent: "transparent",
       primary: {
         10: "#F6FAE8",
-        50: "#FDE9BA",
-        100: "#C1C0B9",
-        200: "#A6A59A",
-        300: "#8A897B",
-        400: "#6F6D5C",
+        50: "#D6DFB8",
+        100: "#CBD6A4",
+        200: "#B4C37C",
+        300: "#9CB154",
+        400: "#859E2B",
         500: "#6E8C03",
       },
       secondary: {
@@ -66,7 +67,7 @@ module.exports = {
         500: "#BF8F54",
       },
       texter: {
-        DEFAULT: '#3D3D3D',
+        DEFAULT: '#333333',
       },
       lightSky: {
         DEFAULT: '#CEE4F2',

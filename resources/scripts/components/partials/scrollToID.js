@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export function initscrollToID() {
     $('a[href*="#"]')
     // Remove links that don't actually link to anything

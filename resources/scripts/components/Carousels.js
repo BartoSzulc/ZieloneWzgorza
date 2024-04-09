@@ -3,6 +3,7 @@ import Swiper from "swiper";
 import { Autoplay, EffectFade, Pagination, Navigation, } from 'swiper/modules';
 
 import { initTestimonialSlider } from './partials/testimonialSlider.js';
+//import { initProductSlider } from './partials/ProductSlider.js';
 
 
 Swiper.use([Pagination, Autoplay, EffectFade, Navigation ]);

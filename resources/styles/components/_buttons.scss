@@ -1,5 +1,5 @@
 .btn {
-    @apply text-B20 flex items-center px-6 h-14 transition-all duration-500 ease-in-out text-white rounded-2xl font-normal gap-3;
+    @apply w-fit text-B20 flex items-center px-6 h-14 transition-all duration-500 ease-in-out text-white rounded-2xl font-normal gap-3;
     &--primary {
         @apply bg-primary-500;
         &:hover {
@@ -32,4 +32,7 @@
         }
     }
     
+}
+.wpcf7-submit {
+    @apply ml-auto;
 }

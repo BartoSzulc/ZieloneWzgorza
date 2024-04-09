@@ -1256,27 +1256,27 @@
           "slug": "primary-10"
         },
         {
-          "color": "#fde9ba",
+          "color": "#d6dfb8",
           "name": "Primary 50",
           "slug": "primary-50"
         },
         {
-          "color": "#c1c0b9",
+          "color": "#cbd6a4",
           "name": "Primary 100",
           "slug": "primary-100"
         },
         {
-          "color": "#a6a59a",
+          "color": "#b4c37c",
           "name": "Primary 200",
           "slug": "primary-200"
         },
         {
-          "color": "#8a897b",
+          "color": "#9cb154",
           "name": "Primary 300",
           "slug": "primary-300"
         },
         {
-          "color": "#6f6d5c",
+          "color": "#859e2b",
           "name": "Primary 400",
           "slug": "primary-400"
         },
@@ -1301,7 +1301,7 @@
           "slug": "secondary-500"
         },
         {
-          "color": "#3d3d3d",
+          "color": "#333333",
           "name": "Texter DEFAULT",
           "slug": "texter-default"
         },
