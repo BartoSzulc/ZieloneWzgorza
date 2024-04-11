@@ -1,42 +1,27 @@
-@php
-   $title = $data['title'] ?? null;
-   $content = $data['content'] ?? null;
-   $list = $data['list'] ?? null;
-   $content2 = $data['content2'] ?? null;
-@endphp
-<section class="home__intro lg:pt-[150px] lg:pb-[72px] py-20" @if ($id) id="{{ $id }}" @endif>
+<section class="home__intro pt-[90px] pb-10">
     <div class="container">
-       <div class="w-full text-center">
-         @if ($title)
-          <div class="text-h3 lg:text-h2 font-secondary font-bold mb-11 text-primary100">
-             <h2>{!! $title !!}</h2>
-          </div>
-         @endif
-          <div class="flex flex-col text-center gap-5">
-            @if ($content)
-             <div class="text-B24 font-bold text-black10">
-                {!! $content !!}
-             </div>
-            @endif
-             <div class="text-white lg:text-B24 font-bold py-8 text-B20">
-               @if ($list)
-                <ul class="ul-custom ul-custom--center flex flex-col gap-6 text-center">
-                  @foreach ($list as $item)
-                  @php($text = $item['item'] ?? null)
-                   <li>{!! $text !!}</li>
-                   @endforeach
-                </ul>
-               @endif
-               
-             </div>
-             @if ($content2)
-             <div class="text-B24 font-bold text-black10">
-                  {!! $content2 !!}
-             </div>
-             @endif
-          </div>
- 
-          
-       </div>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-6 relative flex items-center justify-center">
+                
+                <div class="flex flex-col gap-30 relative z-10 py-6 pl-6">
+                    <div class="left-0 absolute w-[calc(100%+24px)] h-full bg-white rounded-3xl shadow-cien-1 top-0">
+
+                    </div>
+                    <div class="text-B16 relative z-10">
+                        <p>Witamy w Zielonych Wzgórzach, Twojej oazie spokoju w sercu natury. Położone malowniczo w Nieżywięciu, nasze obiekty oferują wyjątkowe połączenie komfortowych noclegów i profesjonalnych usług rehabilitacyjnych.</p>
+                    </div>
+                    <div class="text-B20 font-bold relative z-10">
+                        <p>Odkryj, jak bliskość Borów Tucholskich i jeziora Charzykowskiego sprawia, że każdy moment spędzony u nas jest niezapomniany.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-6 relative h-[420px]">
+                <div class="absolute rounded-2xl top-0 w-[calc((673/552)*100%)] h-full right-0">
+                    <img src="{{asset('images/intro_img.png')}}" alt="" class="rounded-2xl w-full h-full object-center object-cover">
+
+                </div>
+            </div>
+
+        </div>
     </div>
- </section>
+</section>

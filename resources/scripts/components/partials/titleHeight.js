@@ -5,7 +5,7 @@ export function initTitleHeight() {
     const height = title.offsetHeight;
     return height > max ? height : max;
     }, 0);
-    document.querySelectorAll('.title').forEach(title => {
+    document.querySelectorAll('.home__our--offer .title').forEach(title => {
     title.style.height = `${maxHeight}px`;
     });
 }

@@ -23,7 +23,13 @@ const main = async (err) => {
     console.error(err);
   }
   
-
+  const buttons = document.querySelectorAll('.btn.btn--primary');
+  buttons.forEach(button => {
+      if (button.querySelector('svg')) {
+          button.classList.add('btn--svg');
+      }
+  });
+  
   let lazyLoad = new LazyLoad({
     elements_selector: "[data-lazy]",
     load_delay: 300,

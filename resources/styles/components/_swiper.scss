@@ -1,47 +1,37 @@
 .swiper {
-   
-    &-button {
-        @apply cursor-pointer;
-        svg path {
-            @apply transition-all duration-500 ease-in-out;
-        }
-        &:hover {
-            svg path {
-                @apply fill-color3;
-            }
-        }
-    }
     &-pagination {
         &-bullets {
-            @apply w-fit right-5 bottom-5 lg:right-30 left-auto lg:bottom-30 flex justify-center lg:space-x-5 space-x-2 #{!important};
+            @apply relative bottom-0 top-0 mt-4 gap-4 flex items-center justify-center #{!important};
         }
         &-bullet {
-            @apply inline-block h-2.5 w-2.5 lg:h-5 lg:w-5 rounded-full m-0 opacity-100 bg-white border border-solid border-white transition-all duration-500 ease-in-out #{!important};
+            @apply inline-block w-4 h-4 rounded-full mx-0 opacity-100 bg-primary-50 border-none transition-all duration-500 ease-in-out #{!important};
             &-active {
-                @apply bg-color3 border-color3 dark:bg-color5 dark:border-color5 #{!important};
+                @apply bg-primary-500 #{!important};
             }
            
         }
     }
 }
-.heroSwiper__counter {
-    @apply font-secondary text-h6 lg:text-[34px] lg:leading-[44px] font-semibold text-color1;
-    .swiper-pagination-current {
-        @apply text-color3;
-    }
-}
-.heroSwiper__nav {
-    svg {
-        path {
-            @apply transition-all duration-500 ease-in-out fill-color5;
+
+.swiperPhotoApartment {
+    .swiper-pagination {
+        &-bullets {
+            @apply bottom-2 left-1/2 -translate-x-1/2 right-auto top-auto w-fit flex justify-center gap-2 absolute #{!important};
+        }
+        &-bullet {
+            @apply inline-block h-2 w-2 rounded-full m-0 opacity-100 bg-white border border-solid border-white transition-all duration-500 ease-in-out #{!important};
+            &-active {
+                @apply bg-primary-500 #{!important};
+            }
+           
         }
     }
-    &--prev, &--next {
-        @apply cursor-pointer;
-        &:hover {
-            svg path {
-                @apply fill-color3;
-            }
+}
+.swiperTestimonials {
+    .swiper-slide {
+        @apply transition-all duration-500 ease-in-out blur-[2px] opacity-20;
+        &-active {
+            @apply blur-none opacity-100;
         }
     }
 }

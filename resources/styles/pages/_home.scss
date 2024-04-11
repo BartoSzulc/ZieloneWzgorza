@@ -1,0 +1,6 @@
+.background-cta {
+    background-image: url('../../images/cta_bg+2.png');
+    @apply h-full bg-no-repeat bg-cover;
+    background-position: 50% 70%;
+    @apply blur-sm w-[calc(100%+20px)] h-[calc(100%+20px)] -left-2.5 relative -top-2.5;
+}

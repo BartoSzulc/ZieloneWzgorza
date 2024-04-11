@@ -6,6 +6,7 @@
             @apply bg-primary-400;
             box-shadow: 0px 4px 12px rgba(83, 81, 61, 0.3);
         }
+        &:disabled,
         &.disabled {
             @apply bg-primary-100 text-primary-200;
             svg {
@@ -19,12 +20,15 @@
         @apply pl-6 pr-4;
     }
     &--secondary {
-        @apply bg-primary-10 text-primary-500;
+        @apply bg-primary-10 text-primary-500 border border-primary-10;
         &:hover {
-            @apply bg-[#D6DFB8]/50;
+            @apply bg-primary-400 border border-white;
             box-shadow: 0px 4px 12px rgba(83, 81, 61, 0.3);
+            
+
         }
-        &.disabled {
+        &.disabled, 
+        &:disabled {
             @apply bg-primary-100 text-primary-200/50;
             svg {
                 @apply opacity-50

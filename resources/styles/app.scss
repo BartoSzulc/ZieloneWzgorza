@@ -1,8 +1,7 @@
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../node_modules/glightbox/dist/css/glightbox.css";
-
-  
 @import '../../node_modules/slim-select/src/slim-select/slimselect.scss';
+
 :root {
     // Colors
     --ss-primary-color: theme('colors.primary.500');
@@ -44,7 +43,7 @@
 // @import 'components/posts';
 // @import 'components/navi';
 @import 'components/form';
-// @import 'components/swiper';
+@import 'components/swiper';
 
 // // - Pages 
 @import 'pages/home';
