@@ -8,8 +8,9 @@
   },
   "type": "module",
   "scripts": {
+    "process-images": "node resources/scripts/process-images.js",
     "dev": "bud dev",
-    "build": "bud build",
+    "build": "npm run process-images && bud build",
     "translate": "yarn translate:pot && yarn translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"theme.json,patterns,app,resources\"",
     "translate:update": "wp i18n update-po ./resources/lang/sage.pot ./resources/lang/*.po",
@@ -31,6 +32,8 @@
     "glightbox": "^3.2.0",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
+    "leaflet": "^1.9.4",
+    "sharp": "^0.33.3",
     "slim-select": "^2.8.2",
     "swiper": "^11.0.5",
     "vanilla-lazyload": "^19.1.2"

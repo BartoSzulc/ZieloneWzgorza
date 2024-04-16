@@ -11,4 +11,5 @@
 @include('sections.home-partials.atrakcje')
 @include('sections.home-partials.opinie')
 
+
 @endsection

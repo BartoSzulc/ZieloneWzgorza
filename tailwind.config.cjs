@@ -42,6 +42,7 @@ module.exports = {
       boxShadow: {
         'cien-1': '0px 24px 48px rgba(37, 34, 0, 0.0816067);',
         'form': '0px 12px 32px rgba(37, 34, 0, 0.08);',
+        'pin': '0px 30px 60px -15px rgba(2, 26, 76, 0.15);',
        
       },
       dropShadow: {
@@ -103,28 +104,28 @@ module.exports = {
       }],
       // 24px
       'h5': ['clamp(1.25rem, 0.446vw + 0.964rem, 1.5rem);', {
-        lineHeight: 'clamp(1.75rem, 0.679vw + 1.316rem, 2.13rem);',
+        lineHeight: 1.2,
         fontWeight: 400,
       }],
       // 28px
       'h4': ['clamp(1.5rem, 0.446vw + 1.214rem, 1.75rem);', {
-        lineHeight: 'clamp(2.13rem, 0.54vw + 1.784rem, 2.432rem);',
+        lineHeight: 1.2,
         fontWeight: 600,
       }],
       // 40px
       'h3': ['clamp(1.75rem, 1.339vw + 0.893rem, 2.5rem);', {
-        lineHeight: 'clamp(2.432rem, 1.906vw + 1.212rem, 3.5rem);',
+        lineHeight: 1.2,
         fontWeight: 600,
       }],
       // 48px
       'h2': ['clamp(2.5rem, 0.893vw + 1.929rem, 3rem);', {
-        lineHeight: 'clamp(3.5rem, 1.196vw + 2.734rem, 4.17rem);',
+        lineHeight: 1.2,
         fontWeight: 700,
         letterSpacing: '0.05em',
       }],
       // 64px
       'h1': ['clamp(3rem, 1.786vw + 1.857rem, 4rem);', {
-        lineHeight: 'clamp(4.17rem, 2.554vw + 2.536rem, 5.6rem);',
+        lineHeight: 'clamp(3.6rem, 3.571vw + 1.314rem, 5.6rem)',
         fontWeight: 700,
         letterSpacing: '0.05em',
       }],

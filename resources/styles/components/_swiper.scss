@@ -10,6 +10,10 @@
             }
            
         }
+        &-fraction {
+            @apply w-fit relative bottom-0 top-0  gap-2.5 text-B20 text-primary-500 flex items-center justify-center #{!important};
+        
+        }
     }
 }
 

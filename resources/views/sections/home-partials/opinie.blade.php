@@ -12,8 +12,17 @@
             @include('partials.testimonial-slide')
           
         </div>
-        <div class="swiper-pagination">
+        <div class="swiperTestimonials__nav flex gap-4 items-center justify-center mt-8">
+            <div class="swiperTestimonials__nav--prev">
+                @include('partials.swiper-button', ['class' => 'prev'])
+            </div>
+            <div class="swiper-pagination">
+            </div>
+            <div class="swiperTestimonials__nav--next">
+                @include('partials.swiper-button', ['class' => 'rotate-180 next'])
+            </div>
 
+            
         </div>
     </div>
 </section>

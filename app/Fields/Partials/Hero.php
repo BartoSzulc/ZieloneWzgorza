@@ -18,14 +18,10 @@ class Hero extends Partial
 
         $hero
             ->addGroup('hero', ['label' => 'Hero'])
-                ->addText('id', ['label' => 'ID'])
+                ->addSelect('type', ['label' => 'Wybór układu', 'choices' => ['default' => 'Nagłówek dół',  'big' => 'Nagłówek góra'], 'default_value' => 'default'])
+                ->addText('subtitle', ['label' => 'Nadtytuł'])
                 ->addText('title', ['label' => 'Nagłówek'])
-                ->addRepeater('realizations', ['label' => 'Realizacje (wersja desktopowa)', 'instructions' => 'Dodaj maksymalnie 6 realizacji, środkowa (5) jest widoczna jako pierwsza', 'min' => 9, 'max' => 9])
-                    ->addImage('image', ['label' => 'Zdjęcie', 'return_format' => 'id'])
-                ->endRepeater()
-                ->addRepeater('realizations-mobile', ['label' => 'Realizacje (wersja mobilna)', 'instructions' => 'Dodaj maksymalnie 3 realizacje, środkowa (2) jest widoczna jako pierwsza', 'min' => 3, 'max' => 3])
-                    ->addImage('image', ['label' => 'Zdjęcie', 'return_format' => 'id'])
-                ->endRepeater()
+                ->addImage('image', ['label' => 'Zdjęcie', 'return_format' => 'id', 'required' => 1])
             ->endGroup()
         ;
         return $hero;

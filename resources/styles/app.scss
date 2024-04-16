@@ -1,6 +1,8 @@
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../node_modules/glightbox/dist/css/glightbox.css";
 @import '../../node_modules/slim-select/src/slim-select/slimselect.scss';
+@import '../../node_modules/leaflet/dist/leaflet.css';
+
 
 :root {
     // Colors
@@ -44,6 +46,7 @@
 // @import 'components/navi';
 @import 'components/form';
 @import 'components/swiper';
+@import 'components/map';
 
 // // - Pages 
 @import 'pages/home';
@@ -90,5 +93,4 @@ body {
     -webkit-leading-trim: both;
     -webkit-text-edge: cap;
     paint-order: stroke fill;
-
 }

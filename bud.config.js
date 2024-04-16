@@ -17,7 +17,6 @@ export default async (app) => {
     .entry('app', ['@scripts/app', '@styles/app'])
     .entry('editor', ['@scripts/editor', '@styles/editor'])
     .assets(['images']);
-
   /**
    * Set public path
    *

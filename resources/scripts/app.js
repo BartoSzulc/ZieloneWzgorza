@@ -9,6 +9,8 @@ import { initStickyMenu } from './components/partials/stickyMenu';
 import { initAOS } from './components/partials/aos';
 import { initForm } from './components/partials/form';
 import { initTitleHeight } from './components/partials/titleHeight';
+import { initMap } from './components/partials/map';
+import { initMapContact } from './components/partials/mapContact';
 import Carousels from "./components/Carousels";
 import SlimSelect from 'slim-select';
 
@@ -43,6 +45,14 @@ const main = async (err) => {
   initgLightbox();
   initForm();
   initTitleHeight();
+
+  if (document.body.classList.contains('page-template-template-atrakcje')) {
+    initMap();
+  }
+  if (document.body.classList.contains('page-template-template-contact')) {
+    initMapContact();
+  }
+ 
 
   let carousels = new Carousels();
   carousels.init();

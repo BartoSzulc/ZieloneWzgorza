@@ -2,8 +2,10 @@
     $data = get_field('footer', 'option');
     $socials = $data['socials'] ?? null;
 @endphp
-@include('partials.contact-form')
-<footer class="relative ">
+@if (!is_page_template( 'template-contact.blade.php' ))
+    @include('partials.contact-form')
+@endif
+<footer class="relative">
     <div class="container">
         <div class="pt-8">
             <div class="text-center">
@@ -38,7 +40,6 @@
                 </div>
             </div>
         </div>
-       
     </div>
     <div class="footer-copy text-center py-6 text-B12">
         <p>© {{ date('Y') }} Zielone Wzgórza. All rights reserved.</p>
