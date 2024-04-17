@@ -33,7 +33,7 @@ module.exports = {
     },
     extend: {
       borderRadius: {
-        'hero': '0 0 128px 128px',
+        'hero': '0 0 clamp(4rem, 15.385vw + -5.846rem, 8rem) clamp(4rem, 15.385vw + -5.846rem, 8rem)',
       },
       gridTemplateColumns: {
         // Simple 16 column grid

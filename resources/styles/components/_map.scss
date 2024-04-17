@@ -12,8 +12,8 @@
         }
     }
 }
-.leaflet-popup-content-wrapper{
-    @apply relative bg-white shadow-pin px-3 py-3.5 text-center rounded-xl font-secondary #{!important};
+.leaflet-popup-content-wrapper {
+    @apply relative bg-white shadow-pin px-3 py-3.5 text-center rounded-xl font-secondary;
     &:after {
         content: url("data:image/svg+xml,%3Csvg width='32' height='28' viewBox='0 0 32 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2679 27C15.0377 28.3333 16.9623 28.3333 17.7321 27L31.5885 3C32.3583 1.66667 31.396 0 29.8564 0H2.14359C0.603993 0 -0.358258 1.66667 0.411542 3L14.2679 27Z' fill='white'/%3E%3C/svg%3E%0A");
         @apply absolute -bottom-5 left-1/2 -translate-x-1/2 z-0;

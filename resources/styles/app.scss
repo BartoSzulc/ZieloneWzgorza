@@ -56,7 +56,7 @@
 @import 'sections/footer';
 
 body {
-    @apply transition-all duration-500 ease-in-out font-secondary text-texter;
+    @apply transition-all duration-500 ease-in-out font-secondary text-texter text-B16;
     @apply bg-white;
     // &.development {
     //     section {
