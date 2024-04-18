@@ -6,9 +6,9 @@
         <div class="grid grid-cols-3 gap-6">
             <div class="col-span-1 text-center">
                 <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
-                    <div class="flex flex-col gap-2 items-center title justify-center">
+                    <div class="flex flex-col gap-2 items-center title justify-center py-2">
                         <div class="icon">
-                            @svg('images.fizjo_icon')
+                            @svg('images.icons.fizjo_icon')
                         </div>
                         <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
                             <h3>Fizjoterapia</h3>
@@ -25,9 +25,9 @@
             </div>
             <div class="col-span-1 text-center">
                 <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
-                    <div class="flex flex-col gap-2 items-center title justify-center">
+                    <div class="flex flex-col gap-2 items-center title justify-center py-2">
                         <div class="icon">
-                            @svg('images.fizjo_icon')
+                            @svg('images.icons.fizjo_icon')
                         </div>
                         <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
                             <h3>Turnusy rehabilitacyjne</h3>
@@ -44,9 +44,9 @@
             </div>
             <div class="col-span-1 text-center">
                 <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
-                    <div class="flex flex-col gap-2 items-center title justify-center">
+                    <div class="flex flex-col gap-2 items-center title justify-center py-2">
                         <div class="icon">
-                            @svg('images.fizjo_icon')
+                            @svg('images.icons.fizjo_icon')
                         </div>
                         <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
                             <h3>Noclegi</h3>

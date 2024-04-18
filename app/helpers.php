@@ -67,6 +67,7 @@ function cc_mime_types($mimes) {
 add_filter('upload_mimes', 'cc_mime_types');
 
 require('helpers-partials/cpt-atrakcje.php');
+require('helpers-partials/cpt-pokoje.php');
 
 
 

@@ -2287,6 +2287,11 @@ accepts@~1.3.8:
     mime-types "~2.1.34"
     negotiator "0.6.3"
 
+accordion-js@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.npmjs.org/accordion-js/-/accordion-js-3.3.4.tgz"
+  integrity sha512-jHDTLnj5hhcCeqHm4bdgiL054kiyoMEVfMMiVlCAy8O0+Wu2Ht2cXL1eUze6//7lAeWz5mrHKGu9XwqBdylg9w==
+
 acorn-import-assertions@^1.9.0:
   version "1.9.0"
   resolved "https://registry.npmjs.org/acorn-import-assertions/-/acorn-import-assertions-1.9.0.tgz"
@@ -5530,9 +5535,9 @@ neo-async@^2.6.2:
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
 node-abi@^3.3.0:
-  version "3.58.0"
-  resolved "https://registry.npmjs.org/node-abi/-/node-abi-3.58.0.tgz"
-  integrity sha512-pXY1jnGf5T7b8UNzWzIqf0EkX4bx/w8N2AvwlGnk2SYYA/kzDVPaH0Dh0UG4EwxBB5eKOIZKPr8VAHSHL1DPGg==
+  version "3.59.0"
+  resolved "https://registry.npmjs.org/node-abi/-/node-abi-3.59.0.tgz"
+  integrity sha512-HyyfzvTLCE8b1SX2nWimlra8cibEsypcSu/Az4SXMhWhtuctkwAX7qsEYNjUOIoYtPV884oN3wtYTN+iZKBtvw==
   dependencies:
     semver "^7.3.5"
 

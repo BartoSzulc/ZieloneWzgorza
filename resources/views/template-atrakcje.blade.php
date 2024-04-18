@@ -20,7 +20,7 @@ $query = new WP_Query( $args );
         <div class="grid grid-cols-3 gap-x-6 gap-y-12">
             @while ($query->have_posts())
                 @php $query->the_post() @endphp
-                    @include('partials.post')
+                    @include('partials.atrakcje-post')
             @endwhile 
             @php wp_reset_postdata() @endphp
         </div>

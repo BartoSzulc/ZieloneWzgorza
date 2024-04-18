@@ -33,7 +33,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('http://zielonewzgrza.local/')
+    .setProxyUrl('http://zielonewzgorza.local/')
     .watch(['resources/views', 'app']);
 
   /**

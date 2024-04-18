@@ -9,7 +9,7 @@
     <div class="container">
         <div class="pt-8">
             <div class="text-center">
-                <a class="w-full flex items-center justify-center" href="{{ home_url() }}">
+                <a class="w-full flex items-center justify-center transition-all duration-500 ease-in-out hover:opacity-40" href="{{ home_url() }}">
                     <img src="{{ asset('images/logo_black.svg') }}" alt="">
                 </a>
             </div>
@@ -25,16 +25,16 @@
                 </nav>
                 @endif
                 <div class="social-icons flex items-center gap-6">
-                    <a href="">
+                    <a target="_blank" rel="noopener" href="" class="icon">
                         @svg('images.icons.fb')
                     </a>
-                    <a href="">
+                    <a target="_blank" rel="noopener" href="" class="icon">
                         @svg('images.icons.ig')
                     </a>
-                    <a href="">
+                    <a target="_blank" rel="noopener" href="" class="icon">
                         @svg('images.icons.tiktok')
                     </a>
-                    <a href="">
+                    <a target="_blank" rel="noopener" href="" class="icon">
                         @svg('images.icons.linkedin')
                     </a>
                 </div>

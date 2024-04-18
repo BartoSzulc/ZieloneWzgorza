@@ -105,7 +105,7 @@ module.exports = {
       // 24px
       'h5': ['clamp(1.25rem, 0.446vw + 0.964rem, 1.5rem);', {
         lineHeight: 1.2,
-        fontWeight: 400,
+        fontWeight: 600,
       }],
       // 28px
       'h4': ['clamp(1.5rem, 0.446vw + 1.214rem, 1.75rem);', {

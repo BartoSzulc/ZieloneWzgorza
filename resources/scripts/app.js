@@ -11,6 +11,7 @@ import { initForm } from './components/partials/form';
 import { initTitleHeight } from './components/partials/titleHeight';
 import { initMap } from './components/partials/map';
 import { initMapContact } from './components/partials/mapContact';
+import Accordion from 'accordion-js';
 import Carousels from "./components/Carousels";
 import SlimSelect from 'slim-select';
 
@@ -36,7 +37,12 @@ const main = async (err) => {
     elements_selector: "[data-lazy]",
     load_delay: 300,
   });
-
+  const accordions = Array.from(document.querySelectorAll('.accordion-container'));
+  new Accordion(accordions, {
+    duration: 750,
+    showMultiple: true,
+    activeClass: 'is-active',
+  });
   initStickyMenu();
   initMenu();
   initAOS();

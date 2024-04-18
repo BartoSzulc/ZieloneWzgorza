@@ -11,14 +11,13 @@
 <section class="turnusy__intro">
   <div class="container">
     <div class="grid grid-cols-12 gap-6">
-      <div class="col-span-full lg:col-span-10 col-start-2 text-center">
+      <div class="col-span-full lg:col-span-10 lg:col-start-2 text-center">
         <p>Zapraszamy na turnusy rehabilitacyjne z pełnym pakietem usług: od 7 do 14 noclegów, 3 posiłki dziennie, zabiegi rehabilitacyjne, a także liczne aktywności zwiększające efektywność kuracji.</p>
       </div>
     </div>
   </div>
 </section>
 <section class="turnusy__intro-sec lg:my-20">
-
   <div class="container">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="col-span-1 flex flex-col gap-4 pt-[18px]">
@@ -42,8 +41,159 @@
 <section class="turnusy__offer mb-20">
   <div class="container">
     <div class="grid grid-cols-3 gap-6">
-      <div class="col-span-1">
-        
+      <div class="col-span-full w-full mb-2 text-center text-h3 font-primary">
+        <h2>W ramach pobytu oferujemy</h2>
+      </div>
+      <div class="col-span-1 text-center">
+        <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+            <div class="flex flex-col gap-2 items-center title justify-center py-2">
+                <div class="icon">
+                    @svg('images.icons.fizjo_icon')
+                </div>
+                <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
+                    <h3>Noclegi</h3>
+                </div>
+            </div>
+            <div class="text-B16">
+               <p> 7 lub 14 noclegów w komfortowych pokojach i apartamentach, zaprojektowanych z myślą o Twoim pełnym komforcie i regeneracji.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-span-1 text-center">
+        <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+            <div class="flex flex-col gap-2 items-center title justify-center py-2">
+                <div class="icon">
+                    @svg('images.icons.fizjo_icon')
+                </div>
+                <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
+                    <h3>Wyżywienie</h3>
+                </div>
+            </div>
+            <div class="text-B16">
+               <p> 3 posiłki dziennie w formie bufetu szwedzkiego, przygotowane z myślą o zdrowym odżywianiu i wsparciu procesów regeneracyjnych organizmu.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-span-1 text-center">
+        <div class="h-full flex flex-col gap-4 p-2 pb-8 rounded-3xl transition-all duration-500 ease-in-out hover:shadow-cien-1">
+            <div class="flex flex-col gap-2 items-center title justify-center py-2">
+                <div class="icon">
+                    @svg('images.icons.fizjo_icon')
+                </div>
+                <div class="text-h4 lg:text-h3 text-primary-500 font-primary">
+                    <h3>Turnusy rehabilitacyjne</h3>
+                </div>
+            </div>
+            <div class="text-B16">
+               <p> Indywidualnie dobierane programy zabiegów, realizowane pod okiem doświadczonych specjalistów. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="turnusy__treatments bg-primary-10 relative py-20">
+  <div class="container">
+    <div class="grid grid-cols-2 gap-6">
+      <div class="col-span-full mb-2 text-h3 font-primary text-center">
+        <h2>Nasze zabiegi</h2>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Krioterapia</h3>
+          </div>
+          <p>Zabieg zimnoleczniczy, który poprawia ukrwienie, metabolizm i przyspiesza procesy regeneracyjne.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="turnusy__additional bg-white my-20">
+  <div class="container">
+    <div class="grid grid-cols-2 gap-6">
+      <div class="col-span-full mb-2 text-h3 font-primary text-center">
+        <h2>Dodatkowe atrakcje</h2>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
+      </div>
+      <div class="col-span-1 gap-4 flex flex-wrap lg:flex-nowrap bg-white rounded-3xl shadow-cien-1 py-4 px-2">
+        <div class="img min-w-[164px] h-[164px]">
+          <img class="w-full h-full object-cover object-center rounded-2xl" src="{{asset('images/service_1.png')}}" alt="">
+        </div>
+        <div class="text flex flex-col gap-2 justify-center">
+          <div class="text-h4 font-primary">
+            <h3>Ultradźwięki</h3>
+          </div>
+          <p>Wykorzystanie fal dźwiękowych do mikromasażu tkankowego, poprawy metabolizmu komórkowego i właściwości przeciwzapalnych.</p>
+        </div>
       </div>
     </div>
   </div>

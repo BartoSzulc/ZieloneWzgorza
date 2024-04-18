@@ -9,7 +9,7 @@
 <section class="services__intro">
   <div class="container">
     <div class="grid grid-cols-12 gap-6">
-      <div class="col-span-full lg:col-span-10 col-start-2 text-center">
+      <div class="col-span-full lg:col-span-10 lg:col-start-2 text-center">
         <p>Indywidualnie dobierane programy zabiegów, realizowane pod okiem doświadczonych specjalistów. Szczegółowe informacje o zabiegach znajdziesz poniżej.</p>
       </div>
     </div>

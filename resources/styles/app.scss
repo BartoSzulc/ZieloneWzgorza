@@ -94,3 +94,9 @@ body {
     -webkit-text-edge: cap;
     paint-order: stroke fill;
 }
+.accordion-container {
+
+    .is-active {
+        @apply shadow-cien-1;
+    }
+}
