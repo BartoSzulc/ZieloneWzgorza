@@ -8,15 +8,26 @@
 
 @include('partials.hero' , ['class' => 'object-center max-3xl:object-bottom blur-[3px]'])
 
+@php
+    $intro = get_field('intro');
+    $intro_sec = get_field('intro_sec');
+    $content = $intro_sec['content'] ?? null;
+    $zabiegi = get_field('zabiegi');
+    $atrakcje = get_field('dodatkowe_atrakcje');
+@endphp
+
+@if ($intro['content'])
 <section class="turnusy__intro">
   <div class="container">
     <div class="grid grid-cols-12 gap-6">
       <div class="col-span-full lg:col-span-10 lg:col-start-2 text-center">
-        <p>Zapraszamy na turnusy rehabilitacyjne z pełnym pakietem usług: od 7 do 14 noclegów, 3 posiłki dziennie, zabiegi rehabilitacyjne, a także liczne aktywności zwiększające efektywność kuracji.</p>
+        {!! $intro['content'] !!}
       </div>
     </div>
   </div>
 </section>
+@endif
+
 <section class="turnusy__intro-sec lg:my-20">
   <div class="container">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">

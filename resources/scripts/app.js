@@ -11,9 +11,11 @@ import { initForm } from './components/partials/form';
 import { initTitleHeight } from './components/partials/titleHeight';
 import { initMap } from './components/partials/map';
 import { initMapContact } from './components/partials/mapContact';
+import { initDatePicker } from './components/partials/datePicker';
 import Accordion from 'accordion-js';
 import Carousels from "./components/Carousels";
 import SlimSelect from 'slim-select';
+import WooGallery from "./components/partials/RoomGallery";
 
 /**
  * app.main
@@ -25,7 +27,12 @@ const main = async (err) => {
     // handle hmr errors
     console.error(err);
   }
+  let carousels = new Carousels();
+  carousels.init();
   
+  let wooGallery = new WooGallery();
+  wooGallery.init();
+
   const buttons = document.querySelectorAll('.btn.btn--primary');
   buttons.forEach(button => {
       if (button.querySelector('svg')) {
@@ -51,6 +58,7 @@ const main = async (err) => {
   initgLightbox();
   initForm();
   initTitleHeight();
+  initDatePicker();
 
   if (document.body.classList.contains('page-template-template-atrakcje')) {
     initMap();
@@ -58,10 +66,6 @@ const main = async (err) => {
   if (document.body.classList.contains('page-template-template-contact')) {
     initMapContact();
   }
- 
-
-  let carousels = new Carousels();
-  carousels.init();
   
   // application code
 };

@@ -19,7 +19,7 @@ export function initMapContact() {
 
     const customMarkerHtml = L.divIcon({
         className: 'custom-marker',
-        html: '<div class="my-custom-popup"><div class="inside"><p class="text-primary-500 font-bold text-B16">Zielone Wzgórza</p><p class="text-B12">Nieżywięć 145, 77-300 <br/> Nieżywięć</p></div></div>',
+        html: '<div class="my-custom-popup"><div class="inside"><p class="text-primary-500 font-bold text-B16 mb-2">Zielone Wzgórza</p><p class="text-B12">Nieżywięć 145, 77-300 <br/> Nieżywięć</p></div></div>',
         iconSize: [190, 130],
     });
     // Create the marker

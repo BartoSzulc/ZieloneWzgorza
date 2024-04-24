@@ -22,6 +22,8 @@ class Room extends Field
             ->addTab('gallery', ['label' => 'Galeria'])
                 ->addGallery('gallery', ['label' => 'Galeria', 'return_format' => 'id'])
             ->addTab('details', ['label' => 'Szczegóły'])
+                ->addText('type', ['label' => 'Typ', 'default_value' => 'Pokój'])
+                ->addText('availability', ['label' => 'Dostępność'])
                 ->addText('price', ['label' => 'Cena'])
                 ->addText('size', ['label' => 'Ilość osób'])
                 ->addRepeater('features', ['label' => 'Udogodnienia', 'button_label' => 'Dodaj udogodnienie'])

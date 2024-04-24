@@ -8,19 +8,21 @@ export function initgLightbox() {
       <div class="goverlay"></div>
       <div class="gcontainer">
       <div id="glightbox-slider" class="gslider"></div>
-      <button class="gnext gbtn rotate-180" tabindex="0" aria-label="Next" data-customattribute="example">
+      <button class="gnext gbtn bg-transparent" tabindex="0" aria-label="Next" data-customattribute="example">
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="#B4C37C" stroke-width="2" stroke-miterlimit="10"/>
-        <path d="M22.8563 30.3561L16.5 23.9998L22.8563 17.6436" stroke="#B4C37C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16.5 24H31.5" stroke="#B4C37C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="#6E8C03" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M25.1438 30.3563L31.5 24L25.1438 17.6438" stroke="#6E8C03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5 24H31.5" stroke="#6E8C03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
+
       </button>
-      <button class="gprev gbtn" tabindex="1" aria-label="Previous">
+      <button class="gprev gbtn rotate-180 bg-transparent" tabindex="1" aria-label="Previous">
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="#B4C37C" stroke-width="2" stroke-miterlimit="10"/>
-      <path d="M25.1437 30.3561L31.5 23.9998L25.1437 17.6436" stroke="#B4C37C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16.5 24H31.5" stroke="#B4C37C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>      
+      <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="#6E8C03" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M25.1438 30.3563L31.5 24L25.1438 17.6438" stroke="#6E8C03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5 24H31.5" stroke="#6E8C03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
       </button>
       <button class="gclose" tabindex="2" aria-label="Close">
       <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,5 +35,6 @@ export function initgLightbox() {
   
     const lightbox = GLightbox({ 
       lightboxHTML: customLightboxHTML,
+      selector: '.glightbox',
     });
 }

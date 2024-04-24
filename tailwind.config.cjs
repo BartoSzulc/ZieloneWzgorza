@@ -155,10 +155,10 @@ module.exports = {
     plugin(function ({addBase, addComponents, addUtilities, theme}) {
       addComponents({
         ".container": {
-          paddingLeft: "1.25rem",
-          paddingRight: "1.25rem",
+          paddingLeft: "15px",
+          paddingRight: "15px",
           width: "100%",
-          maxWidth: "1168px",
+          maxWidth: "1158px",
           margin: "0 auto",
         },
 

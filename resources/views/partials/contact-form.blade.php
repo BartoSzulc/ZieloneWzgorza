@@ -1,4 +1,4 @@
-<section class="contact__form mt-72 pb-72 relative overflow-hidden">
+<section class="contact__form mt-12 pb-12 lg:mt-72 lg:pb-72 relative overflow-hidden">
     <div class="container">
         <div class="grid grid-cols-12 gap-6 relative">
             <div class="w-[calc((648/1128)*100%)] absolute">

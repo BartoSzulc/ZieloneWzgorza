@@ -5,14 +5,29 @@
             @apply mt-5;
         }
         h1 {
-            @apply text-h3 lg:text-h2;
+            @apply text-h1 font-primary;
         }
         h2 {
-            @apply text-h4 lg:text-h3;
+            @apply text-h2 font-primary;
         }
         h3 { 
-            @apply text-h5 lg:text-h4;
+            @apply text-h3 font-primary;
         }
     }
 
+}
+.wysiwyg {
+    @apply text-texter;
+    > * + * {
+        @apply mt-5;
+    }
+    h1 {
+        @apply text-h2 font-primary;
+    }
+    h2 {
+        @apply text-h3 font-primary;
+    }
+    h3 { 
+        @apply text-h4 font-primary;
+    }
 }

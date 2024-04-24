@@ -5,6 +5,7 @@ import { initPhotoApartmentSlider } from './partials/photoApartmentSlider.js';
 import { initApartmentsSlider } from './partials/ApartmentsSlider.js';
 import { initAtrakcjeSlider } from './partials/AtrakcjeSlider.js';
 
+
 export default class Carousels extends Component {
 
     constructor() {

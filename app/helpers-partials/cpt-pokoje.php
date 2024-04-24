@@ -26,7 +26,42 @@ function register_custom_post_type_pokoje() {
     );
 
     register_post_type('pokoje', $args); // Changed the post type key to "pokoje"
+
+    
 }
 add_action('init', 'register_custom_post_type_pokoje');
+
+add_filter( 'wpcf7_form_tag', 'dynamic_room_list', 10, 2 );
+
+function dynamic_room_list( $tag, $unused ) {
+    if ( 'your-subjectRezerwacje' != $tag['name'] ) {
+        return $tag;
+    }
+
+    $args = array(
+        'post_type'      => 'pokoje',
+        'posts_per_page' => -1, // Retrieve all posts
+        'post_status'    => 'publish',
+    );
+
+    $custom_posts = get_posts( $args );
+    if ( ! $custom_posts ) {
+        return $tag;
+    }
+
+    // Start with an empty array for the options
+    $tag['raw_values'][] = ''; // Optional: Add a first empty option
+    $tag['labels'][] = ''; // Optional: Add a first option label
+    $tag['values'][] = ''; // Optional: Add a first option value
+
+    // Loop through the posts and add them as options
+    foreach ( $custom_posts as $custom_post ) {
+        $tag['values'][] = $custom_post->post_title; // Use post title as option value
+        $tag['labels'][] = $custom_post->post_title; // Use post title as option label
+    }
+
+    return $tag;
+}
+
 
 

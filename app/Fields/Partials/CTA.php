@@ -14,13 +14,17 @@ class CTA extends Partial
      */
     public function fields()
     {
-        $cTA = new FieldsBuilder('c_t_a');
+        $cta = new FieldsBuilder('cta');
 
-        $cTA
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+        $cta
+            ->addGroup('c_t_a', ['label' => 'CTA'])
+                ->addText('title', ['label' => 'Tytuł'])
+                ->addRepeater('links', ['label' => 'Linki', 'button_label' => 'Dodaj link'])
+                    ->addLink('link', ['label' => 'Link'])
+                ->endRepeater()
+            ->endGroup()
+            ;
 
-        return $cTA;
+        return $cta;
     }
 }

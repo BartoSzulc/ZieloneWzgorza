@@ -22,6 +22,16 @@ class Accommodation extends Field
         $accommodation
             ->addTab('hero', ['label' => 'Hero', 'placement' => 'left'])
                 ->addFields($this->get(Hero::class))
+             ->addTab('intro', ['label' => 'Wstęp', 'placement' => 'left'])
+                ->addGroup('intro', ['label' => 'Wstęp'])
+                    ->addWysiwyg('content', ['label' => 'Treść'])
+                ->endGroup()
+            ->addTab('form', ['label' => 'Formularz', 'placement' => 'left'])
+                ->addGroup('form', ['label' => 'Formularz'])
+                    ->addText('title', ['label' => 'Tytuł'])
+                    ->addText('title_form', ['label' => 'Tytuł formularza'])
+                    ->addText('shortcode', ['label' => 'Shortcode formularza'])
+                ->endGroup()
             ;
 
         return $accommodation->build();

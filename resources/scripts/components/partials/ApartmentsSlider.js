@@ -11,9 +11,9 @@ export function initApartmentsSlider() {
         let ApartmentsSwiper = new Swiper(el, {
             simulateTouch: false,
             loop: true,
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            spaceBetween: 24,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 0,
             speed: 750,
             keyboard: {
               enabled: true,
@@ -22,6 +22,19 @@ export function initApartmentsSlider() {
               el: '.swiper-pagination',
               clickable: true,
             },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 24,
+                
+              },
+            }
         });
 
         if (ApartmentsSwiper.slides.length > 1) {

@@ -35,6 +35,7 @@
 @import 'vendor/frameworks';
 
 // // - Abstracts 
+@import 'abstracts/airdatepicker';
 @import 'abstracts/aos';
 // @import 'abstracts/animations';
 @import 'abstracts/fonts';
@@ -84,7 +85,9 @@ body {
     }
 }
 .banner {
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0) 0%, #000000 100%);
+    @media (min-width: 1024px) {
+        background: linear-gradient(0deg, rgba(217, 217, 217, 0) 0%, #000000 100%);
+    }
 
 }
 .text-shadow-hero {
@@ -99,4 +102,7 @@ body {
     .is-active {
         @apply shadow-cien-1;
     }
+}
+.glightbox-clean .gprev, .glightbox-clean .gnext {
+    @apply bg-transparent #{!important};
 }

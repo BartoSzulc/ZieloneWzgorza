@@ -7,10 +7,8 @@ export function initTestimonialSlider() {
         let testimonialsSwiper = new Swiper(el, {
             simulateTouch: false,
             loop: true,
-            slidesPerView: 1.82851,
-            spaceBetween: calculateSlideSpace(),
-            centeredSlides: true,
-            centeredSlidesBounds: true,
+
+            slidesPerView: 1,
             speed: 750,
             slideToClickedSlide: true,
             loopFillGroupWithBlank: true,
@@ -25,6 +23,15 @@ export function initTestimonialSlider() {
                 el: '.swiper-pagination',
                 type: 'fraction',
               },
+            breakpoints: {
+                    
+                1024: {
+                    slidesPerView: 1.82851,
+                    spaceBetween: calculateSlideSpace(),
+                    centeredSlides: true,
+                    centeredSlidesBounds: true,
+                },
+            }
         });
         function calculateSlideSpace() {
 

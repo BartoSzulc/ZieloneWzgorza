@@ -1,22 +1,105 @@
+.menu-item:not(.home) {
+    a {
+        @apply transition-all duration-500 ease-in-out relative;
+        &:after {
+            content: "";
+            @apply absolute block w-full h-px rounded-full bg-primary-500 bottom-0 opacity-0;
+            @apply transition-all duration-500 ease-in-out;
+        }
+        &:hover {
+            @apply text-primary-500;
+            &:after {
+                @apply -bottom-1 opacity-100;
+            }
+        }
+    }
+    &.current-menu-item {
+        a {
+            @apply font-bold text-primary-500;
+            &:after {
+                @apply -bottom-1 opacity-100;
+            }
+        }
+    }
+}
+
+.main-header--sticky {
+    .menu-item.home,
+    .js-button {
+        svg {
+            path {
+                @apply transition-all duration-500 ease-in-out relative;
+                @apply stroke-texter;
+            }
+        }
+    } 
+}
+
+.main-header {
+    @apply transition-all duration-500 ease-in-out;
+    @apply max-lg:shadow-cien-1;
+    .icon-close {
+        @apply transition-all duration-500 ease-in-out opacity-0;
+    }
+    svg {
+        path {
+            @apply transition-all duration-500 ease-in-out;
+        }
+    }
+    &.active {
+        @apply bg-texter text-white z-[9999];
+        svg {
+            path {
+                @apply fill-white;
+            }
+        }
+        .icon-open {
+            @apply opacity-0;
+        }
+        .icon-close {
+            @apply opacity-100;
+        }
+    }
+}
+.menu-item.home {
+    svg {
+        path {
+            @apply transition-all duration-500 ease-in-out relative;
+        }
+    }
+    &:hover {
+        svg {
+            path {
+                @apply stroke-primary-500;
+            }
+        }
+    }
+}
 
 .mobile-menu {
-    @apply opacity-0 top-0 left-0 w-full h-[100dvh] z-10;
+    @apply opacity-0 bottom-0 left-0 w-full h-screen z-10;
     @apply transition-all duration-500 ease-in-out;
     @apply pointer-events-none;
     
     &.active {
-        @apply pointer-events-auto opacity-100;
-        backdrop-filter: blur(6px);
+        @apply pointer-events-auto opacity-100 bg-[#3D3D3D]/80;
+        backdrop-filter: blur(11px);
     }
     &-class {
         @apply transition-all duration-500 ease-in-out;
-        @apply gap-4 text-h4;
+        @apply gap-6 text-h3; 
         @media (min-height: 800px) {
-            @apply gap-8
+            @apply gap-8 text-[36px] leading-[1.4];
+            svg {
+                @apply w-8 h-8;
+            }
         }
        
         @media (max-height: 620px) {
-            @apply text-h5;
+            @apply text-h4;
+
         }
+        @apply font-normal #{!important};
+        
     }
 }

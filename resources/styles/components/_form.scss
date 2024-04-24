@@ -28,7 +28,7 @@
                 }
             }
             textarea {
-                @apply lg:h-full;
+                @apply h-full;
             }
             &--col-3 {
                 @apply grid-cols-1 lg:grid-cols-3;
@@ -46,7 +46,9 @@
         }
         .right {
             .form__grid-col {
-                @apply h-full;
+                &.form__grid-col--col-12 {
+                    @apply grow-0 h-full;
+                }
                 .wpcf7-form-control-wrap {
                     @apply h-full;
                 }
@@ -100,9 +102,9 @@ input[type="checkbox"] {
         }
     }
    a {
-        @apply mx-1 text-primary-500 font-bold;
+        @apply mx-1 text-primary-500;
         &:hover {
-            
+            @apply underline;
         }
    }
    .wpcf7-list-item-label {
@@ -190,4 +192,19 @@ input[type="checkbox"] {
 }
 .last-button {
     @apply -mt-6;
+}
+.wpcf7-form-control-wrap[data-name="your-datemin"], 
+.wpcf7-form-control-wrap[data-name="your-datemax"] {
+    input {
+        @apply cursor-pointer;
+    }
+    @apply relative cursor-pointer;
+    &:after {
+        content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M4.25 8.25H20.75V4.5C20.75 4.30109 20.671 4.11032 20.5303 3.96967C20.3897 3.82902 20.1989 3.75 20 3.75H5C4.80109 3.75 4.61032 3.82902 4.46967 3.96967C4.32902 4.11032 4.25 4.30109 4.25 4.5V8.25Z' fill='%236E8C03' fill-opacity='0.2'/%3E%3Cpath d='M20 3.75H5C4.58579 3.75 4.25 4.08579 4.25 4.5V19.5C4.25 19.9142 4.58579 20.25 5 20.25H20C20.4142 20.25 20.75 19.9142 20.75 19.5V4.5C20.75 4.08579 20.4142 3.75 20 3.75Z' fill='%236E8C03' fill-opacity='0.2'/%3E%3Cpath d='M17 2.25V5.25' stroke='%23B4C37C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 2.25V5.25' stroke='%23B4C37C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.25 8.25H20.75' stroke='%23B4C37C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        @apply absolute  right-4 top-1/2 -translate-y-1/2 h-6 w-6 pointer-events-none;
+    }
+    input:not(:placeholder-shown) {
+        @apply relative z-10 bg-white;
+        
+    }
 }

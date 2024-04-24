@@ -9,8 +9,8 @@ export function initAtrakcjeSlider() {
         let AtrakcjeSwiper = new Swiper(el, {
             simulateTouch: false,
             loop: true,
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 24,
             speed: 750,
             keyboard: {
@@ -20,6 +20,17 @@ export function initAtrakcjeSlider() {
               el: '.swiper-pagination',
               clickable: true,
             },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                
+              },
+            }
         });
 
         if (AtrakcjeSwiper.slides.length > 1) {

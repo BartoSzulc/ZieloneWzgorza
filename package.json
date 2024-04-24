@@ -27,9 +27,10 @@
     "@roots/sage": "6.16.1"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.6.3",
     "@studio-freight/lenis": "^1.0.42",
     "accordion-js": "^3.3.4",
-    "air-datepicker": "^3.4.0",
+    "air-datepicker": "^3.5.0",
     "aos": "^2.3.4",
     "glightbox": "^3.2.0",
     "gsap": "^3.12.5",

@@ -1,16 +1,30 @@
-<section class="home__opinie my-72 relative">
+@php
+    
+    $data = get_field('testimonials');
+
+    $title = $data['title'] ?? null;
+    $items = $data['items'] ?? null;
+@endphp
+
+@if ($data)
+<section class="home__opinie my-12 lg:my-72 relative ">
     <div class="container">
-        <div class="w-full text-center text-h3 lg:text-h2 font-primary">
-            <h2>Opinie</h2>
+        @if ($title)
+        <div class="w-full text-center text-h2 font-primary">
+            <h2>{!! $title !!}</h2>
         </div>
+        @endif
     </div>
-    <div class="swiper swiperTestimonials max-w-full w-full pt-8 pb-16">
+    @if ($items)
+    <div class="swiper swiperTestimonials max-w-full w-full pt-8 pb-16 max-lg:px-[15px]">
         <div class="swiper-wrapper">
-            @include('partials.testimonial-slide')
-            @include('partials.testimonial-slide')
-            @include('partials.testimonial-slide')
-            @include('partials.testimonial-slide')
-          
+            @foreach ($items as $item)
+            @php
+                $name = $item['name'] ?? null;
+                $content = $item['content'] ?? null;
+            @endphp
+                @include('partials.testimonial-slide')
+            @endforeach
         </div>
         <div class="swiperTestimonials__nav flex gap-4 items-center justify-center mt-8">
             <div class="swiperTestimonials__nav--prev">
@@ -21,8 +35,8 @@
             <div class="swiperTestimonials__nav--next">
                 @include('partials.swiper-button', ['class' => 'rotate-180 next'])
             </div>
-
-            
         </div>
     </div>
+    @endif
 </section>
+@endif

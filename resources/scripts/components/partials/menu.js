@@ -27,6 +27,11 @@ export function initMenu() {
             menus.forEach(menu => {
                 menu.classList.toggle('active', isOpen);
             });
+             // Toggle the "active" class on .main-header
+            const mainHeader = document.querySelector('.main-header');
+            if (mainHeader) {
+                mainHeader.classList.toggle('active', isOpen);
+            }
         };
 
         // Function to close the menu explicitly

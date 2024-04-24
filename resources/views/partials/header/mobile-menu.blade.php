@@ -3,10 +3,10 @@
     $socials = $data['socials'] ?? null;
 @endphp
 
-<aside class="z-10 absolute  mobile-menu flex flex-col px-5 py-6 ">
+<aside class="z-10 fixed mobile-menu flex flex-col ">
   @if (has_nav_menu('primary_navigation'))
     <nav class="nav-primary grow" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'container_class' => 'flex h-full w-full', 'menu_class' => 'mobile-menu-class w-full mt-[96px]  font-secondary text-white flex flex-col justify-center text-center items-center', 'echo' => false]) !!}
+      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'container_class' => 'flex h-full w-full', 'menu_class' => ' p-8 mobile-menu-class w-full mt-[72px] font-secondary text-white flex flex-col', 'echo' => false]) !!}
     </nav>
   @endif
   @if ($socials)
