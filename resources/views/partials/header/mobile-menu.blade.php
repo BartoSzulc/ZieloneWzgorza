@@ -1,5 +1,5 @@
 @php
-    $data = get_field('footer', 'option');
+    $data = get_field('header', 'option');
     $socials = $data['socials'] ?? null;
 @endphp
 
@@ -12,7 +12,17 @@
   @if ($socials)
     @include('partials.social-icons', ['class' => 'justify-center'])
   @endif
-  <div class="w-full flex items-center justify-end text-B20 font-light text-primary60 max-lg:mt-6 max-lg:text-center max-lg:justify-center">
-    <p>© {{ date('Y') }} Niedaria.pl. All rights reserved.</p>
+  @if ($socials)
+  <div class="social-icons flex items-center justify-center gap-10">
+    @foreach ($socials as $item)
+        @php 
+            $icon = $item['icon'];
+            $link = $item['link'];
+        @endphp
+          <a target="_blank" rel="noopener" href="{{ $link }}" class="transition-all duration-500 ease-in-out icon hover:scale-110">
+            <img src="{{ $icon['url'] }}" alt="{{ $icon['alt'] }}">
+        </a>
+    @endforeach
   </div>
+@endif
 </aside>

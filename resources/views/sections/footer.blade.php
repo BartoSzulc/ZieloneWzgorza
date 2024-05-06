@@ -26,20 +26,20 @@
                     ])!!}
                 </nav>
                 @endif
+                @if ($socials)
                 <div class="social-icons flex items-center gap-6">
-                    <a target="_blank" rel="noopener" href="" class="icon">
-                        @svg('images.icons.fb')
-                    </a>
-                    <a target="_blank" rel="noopener" href="" class="icon">
-                        @svg('images.icons.ig')
-                    </a>
-                    <a target="_blank" rel="noopener" href="" class="icon">
-                        @svg('images.icons.tiktok')
-                    </a>
-                    <a target="_blank" rel="noopener" href="" class="icon">
-                        @svg('images.icons.linkedin')
-                    </a>
+                    @foreach ($socials as $item)
+                        @php 
+                            $icon = $item['icon'];
+                            $link = $item['link'];
+                        @endphp
+                         <a target="_blank" rel="noopener" href="{{ $link }}" class="transition-all duration-500 ease-in-out icon hover:scale-110">
+                            <img src="{{ $icon['url'] }}" alt="{{ $icon['alt'] }}">
+                        </a>
+                    @endforeach
+                   
                 </div>
+                @endif
             </div>
         </div>
     </div>

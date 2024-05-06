@@ -10,13 +10,13 @@
 <section class="home__opinie my-12 lg:my-72 relative ">
     <div class="container">
         @if ($title)
-        <div class="w-full text-center text-h2 font-primary">
+        <div class="w-full text-center text-h2 font-primary" data-aos="fade-up">
             <h2>{!! $title !!}</h2>
         </div>
         @endif
     </div>
     @if ($items)
-    <div class="swiper swiperTestimonials max-w-full w-full pt-8 pb-16 max-lg:px-[15px]">
+    <div class="swiper swiperTestimonials max-w-full w-full pt-8 pb-0 lg:pb-16 max-lg:px-[15px]">
         <div class="swiper-wrapper">
             @foreach ($items as $item)
             @php

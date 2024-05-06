@@ -16,14 +16,14 @@
 <section class="services__intro">
   <div class="container">
     <div class="grid grid-cols-12 gap-6">
-      <div class="col-span-full lg:col-span-10 lg:col-start-2 text-center">
+      <div class="col-span-full lg:col-span-10 lg:col-start-2 text-center" data-aos="fade-up">
         {!! $content !!}
       </div>
     </div>
   </div>
 </section>
 @endif
-<section class="services__services my-[72px]">
+<section class="services__services my-12 lg:my-[72px]">
   <div class="container">
     @if ($items)
     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-6 gap-6 lg:gap-y-12">
@@ -36,7 +36,7 @@
           $content_i = $item['content'] ?? null;
 
       @endphp
-      <div class="col-span-1">
+      <div class="col-span-1" data-aos="fade-up">
         <div class="flex max-lg:flex-wrap justify-center lg:justify-end items-center relative min-h-[264px]">
           <div class="img relative lg:absolute left-0 lg:top-1/2 lg:-translate-y-1/2 ">
             {!! wp_get_attachment_image($image, 'full', false, ["class" => "max-w-[264px] h-[264px] object-center object-cover aspect-1/1 rounded-3xl relative z-[5] shadow-cien-1", 'loading' => 'lazy']) !!}

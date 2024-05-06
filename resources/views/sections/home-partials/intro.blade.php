@@ -16,12 +16,12 @@
 
                     </div>
                     @if ($content)
-                    <div class="text-B16 relative z-10">
+                    <div class="text-B16 relative z-10" data-aos="fade-up">
                         {!! $content !!}
                     </div>
                     @endif
                     @if ($content_sec)
-                    <div class="text-B20 font-bold relative z-10">
+                    <div class="text-B20 font-bold relative z-10" data-aos="fade-up">
                         {!! $content_sec !!}
                     </div>
                     @endif

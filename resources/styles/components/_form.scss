@@ -80,7 +80,7 @@ input[type="checkbox"] {
     @apply m-0;
 }
 .wpcf7-form-control-wrap {
-    @apply flex h-auto max-lg:justify-end;
+    @apply flex h-auto;
 }
 //checkboxes
 .wpcf7-acceptance {
@@ -102,7 +102,7 @@ input[type="checkbox"] {
         }
     }
    a {
-        @apply mx-1 text-primary-500;
+        @apply text-primary-500;
         &:hover {
             @apply underline;
         }
@@ -191,7 +191,7 @@ input[type="checkbox"] {
     }
 }
 .last-button {
-    @apply -mt-6;
+    @apply lg:-mt-6;
 }
 .wpcf7-form-control-wrap[data-name="your-datemin"], 
 .wpcf7-form-control-wrap[data-name="your-datemax"] {

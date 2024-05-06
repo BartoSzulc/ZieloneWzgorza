@@ -3,12 +3,12 @@
         {!! wp_get_attachment_image($image, 'full', false, ["class" => "h-[264px] w-[264px] object-cover object-center rounded-3xl", 'loading' => 'lazy']) !!}
         <div class="text text-primary-500">
             @if ($title)
-            <div class="text-h4 font-primary">
+            <div class="text-h4 font-primary" data-aos="fade-up">
                 <h3>{!! $title !!}</h3>
             </div>
             @endif
             @if ($subtitle)
-            <div class="additional text-B12">
+            <div class="additional text-B12" data-aos="fade-up">
                 <p>{!! $subtitle !!}</p>
             </div>
             @endif

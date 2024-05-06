@@ -11,7 +11,7 @@
 
 @include('partials.hero' , ['class' => 'object-center max-3xl:object-top blur-[3px]'])
 
-<section class="cennik__add my-20">
+<section class="cennik__add my-12 lg:my-20">
   <div class="container">
     @if ($data)
     @foreach ($data as $item)
@@ -21,9 +21,9 @@
       
       
     @endphp
-    <div class="flex flex-col gap-4 mb-20">
+    <div class="flex flex-col gap-4 mb-12 lg:mb-20">
       @if ($title)
-      <div class="w-full text-center text-h2 font-primary">
+      <div class="w-full lg:text-center text-h2 font-primary" data-aos="fade-up">
         <h2>{!! $title !!}</h2>
       </div>
       @endif
@@ -36,21 +36,21 @@
             $accordion_items = $accordion['element_accordion_items'] ?? null;
         @endphp
         @if ($version == 'v1')
-        <div class="normal-price flex items-center justify-between gap-12 p-4">
+        <div class="normal-price flex max-lg:flex-wrap items-center justify-between gap-4 lg:gap-12 lg:p-4">
           <div class="left flex flex-col gap-1">
             @if ($simple['element_title'])
-            <div class="text-h5 font-primary">
+            <div class="text-h5 font-primary" data-aos="fade-up">
               <h2>{!! $simple['element_title'] !!}</h2>
             </div>
             @endif
             @if ($simple['element_subtitle'])
-            <div class="text-B12">
+            <div class="text-B12" data-aos="fade-up">
               {!! $simple['element_subtitle'] !!}
             </div>
             @endif
           </div>
           @if ($simple['element_price'])
-          <div class="right price whitespace-nowrap">
+          <div class="right price whitespace-nowrap" data-aos="fade-up">
             <strong class="text-B20">{!! $simple['element_price'] !!}</strong>
             <span class="text-B12">zł</span>
           </div>
@@ -58,7 +58,7 @@
         </div>
         @else
         <div class="accordion-container accordion-price">
-          <div class="ac group rounded-b-2xl transition-all duration-500 ease-in-out;">
+          <div class="ac group rounded-b-2xl transition-all duration-500 ease-in-out" data-aos="fade-up">
             <h2 class="ac-header ">
               <div class="ac-trigger flex gap-12 grow items-center bg-white m-0 p-4 relative transition-all duration-500 ease-in-out rounded-t-2xl  group-[.is-active]:bg-primary-10 ">
               @if ($accordion['element_title'])
@@ -95,7 +95,7 @@
                 </div>
                 @endif
                 @if ($price)
-                <div class="right price">
+                <div class="right price whitespace-nowrap">
                   <strong class="text-B20">{!! $price !!}</strong>
                   <span class="text-B12">zł</span>
                 </div>

@@ -41,20 +41,33 @@ export async function initMap() {
         popupAnchor: [0, -40]
     });
 
-    let isFirstMarker = true; // Flag to identify the first marker
+    let latLngs = []; // Array to store the latitude and longitude of each marker
+    let firstMarker = null; // Variable to store the first marker
 
     if (pageData && pageData.acf && pageData.acf["attractions-map"] && pageData.acf["attractions-map"].attractions) {
-        pageData.acf["attractions-map"].attractions.forEach(attraction => {
+        pageData.acf["attractions-map"].attractions.forEach((attraction, index) => {
             const [lat, lng] = attraction.geo.split(',').map(Number);
             const marker = L.marker([lat, lng], {icon: customIcon}).addTo(map);
-            
-            marker.bindPopup(`<div class="my-custom-popup"><div class="inside"><p class="text-primary-500 font-bold text-B16">${attraction.name}</p><p class="text-B12">${attraction.undername}</p></div></div>`);
 
-            // Automatically open the popup for the first marker
-            if (isFirstMarker) {
-                marker.openPopup();
-                isFirstMarker = false; // Reset the flag so only the first marker's popup opens
+            marker.bindPopup(`<div class="my-custom-popup"><div class="inside"><p class="text-primary-500 font-bold text-B16">${attraction.name}</p><p class="text-B12">${attraction.undername}</p></div></div>`, {maxWidth: 200});
+
+            latLngs.push([lat, lng]); // Add the marker's position to the array
+
+            if (index === 0) { // Check if it's the first marker
+                firstMarker = marker; // Store the first marker
             }
         });
+
+        if (latLngs.length > 0) {
+            const bounds = L.latLngBounds(latLngs);
+            map.fitBounds(bounds, {
+                padding: [50, 50], // Optional: Adjust padding
+                maxZoom: 15 // Optional: Adjust max zoom level
+            });
+
+            if (firstMarker) {
+                firstMarker.openPopup(); // Open the popup of the first marker
+            }
+        }
     }
 }

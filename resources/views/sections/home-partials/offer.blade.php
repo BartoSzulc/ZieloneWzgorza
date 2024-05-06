@@ -11,7 +11,7 @@
 <section class="home__our--offer my-12 lg:my-72">
     <div class="container">
         @if ($title)
-        <div class="text-center text-h2 mb-8 font-primary">
+        <div class="text-center text-h2 mb-8 font-primary" data-aos="fade-up">
             <h2>{!! $title !!}</h2>
         </div>
         @endif
@@ -33,18 +33,18 @@
                         </div>
                         @endif
                         @if ($title)
-                        <div class="text-h3 text-primary-500 font-primary">
+                        <div class="text-h3 text-primary-500 font-primary" data-aos="fade-up">
                             <h3>{!! $title !!}</h3>
                         </div>
                         @endif
                     </div>
                     @if ($content)
-                    <div class="text-B16">
+                    <div class="text-B16" data-aos="fade-up">
                         {!! $content !!}
                     </div>
                     @endif
                     @if ($link)
-                    <div class="inline-flex items-center justify-center grow-0 mt-auto">
+                    <div class="inline-flex items-center justify-center grow-0 mt-auto" data-aos="fade-up">
                         <a href="{{ $link['url'] }}" class="btn btn--secondary">{{ $link['title'] }}</a>  
                     </div>
                     @endif

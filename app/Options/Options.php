@@ -36,10 +36,18 @@ class Options extends Field
 
         $options
            
+
+            ->addTab('header_tab', ['label' => 'Header'])
+                ->addGroup('header', ['label' => 'Header'])
+                    ->addRepeater('socials', ['label' => 'Social media w zwijanym menu', 'button_label' => 'Dodaj social media'])
+                        ->addImage('icon', ['label' => 'Ikona'])
+                        ->addText('link', ['label' => 'Link'])
+                    ->endRepeater()
+                ->endGroup()
             ->addTab('footer_tab', ['label' => 'Stopka'])
                 ->addGroup('footer', ['label' => 'Stopka'])
                     ->addRepeater('socials', ['label' => 'Social media', 'button_label' => 'Dodaj social media'])
-                        ->addImage('icon', ['label' => 'Ikona', 'return_format' => 'id'])
+                        ->addImage('icon', ['label' => 'Ikona'])
                         ->addText('link', ['label' => 'Link'])
                     ->endRepeater()
                 ->endGroup()

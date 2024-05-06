@@ -16,7 +16,7 @@
 <section class="home__apartments my-12 lg:my-72">
     <div class="container">
         @if ($title)
-        <div class="w-full text-center text-h2 font-primary">
+        <div class="w-full text-center text-h2 font-primary" data-aos="fade-up">
             <h2>{!! $title !!}</h2>
         </div>
         @endif
@@ -35,12 +35,11 @@
         </div>
         @endif
         @if ($link)
-        <div class="col-span-full flex items-center justify-center">
+        <div class="col-span-full flex items-center justify-center" data-aos="fade-up">
             <div class="inline-flex">
                 <a href="{{ $link['url'] }}" class="btn btn--primary btn--svg"><span>{{ $link['title'] }}</span> @svg('images.icons.bed')</a>
             </div>
         </div>
         @endif
-        
     </div>
 </section>

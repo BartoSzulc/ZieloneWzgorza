@@ -14,12 +14,12 @@
         <div class="flex items-center flex-col gap-2 text-center justify-center h-full">
             @if ($type == 'default')
                 @if ($subtitle)
-                <div class="text-h4 drop-shadow-lg">
+                <div class="text-h4 drop-shadow-lg" data-aos="fade-up">
                     <span class="text-shadow-hero">{!! $subtitle !!}</span>
                 </div>
                 @endif
                 @if ($title)
-                <div class="text-h2 md:text-h1 drop-shadow-lg">
+                <div class="text-h2 md:text-h1 drop-shadow-lg" data-aos="fade-up">
                     <h1 class="text-shadow-hero">
                         {!! $title !!}
                     </h1>
@@ -27,14 +27,14 @@
                 @endif
             @else 
                 @if ($title)
-                <div class="text-h2 md:text-h1 drop-shadow-lg">
+                <div class="text-h2 md:text-h1 drop-shadow-lg" data-aos="fade-up">
                     <h1 class="text-shadow-hero">
                         {!! $title !!}
                     </h1>
                 </div>
                 @endif
                 @if ($subtitle)
-                <div class="text-h4 drop-shadow-lg">
+                <div class="text-h4 drop-shadow-lg" data-aos="fade-up">
                     <span class="text-shadow-hero">{!! $subtitle !!}</span>
                 </div>
                 @endif

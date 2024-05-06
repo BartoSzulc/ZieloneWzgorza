@@ -3,7 +3,7 @@
         <img class="h-[328px] object-cover object-center rounded-2xl" src="@thumbnail('full', false)" alt="">
         <div class="text text-texter flex flex-col gap-4 w-full">
             <div class="title">
-                <div class="text-h5 font-semibold font-primary">
+                <div class="text-h5 font-semibold font-primary" data-aos="fade-up">
                     <h3>@title</h3>
                 </div>
             </div>

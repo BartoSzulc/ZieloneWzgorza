@@ -10,11 +10,11 @@
 @if ($data)
 <section class="home__uslugi my-12 lg:my-72 relative">
     <div class="container">
-        <div class="w-full text-center text-h2 font-primary mb-8">
+        <div class="w-full text-center text-h2 font-primary mb-8" data-aos="fade-up">
             <h2>{!! $title !!}</h2>
         </div>
         @if ($items)
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-9 lg:gap-y-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 lg:gap-y-12">
             @foreach ($items as $item)
                 @php
                     $image = $item['image'] ?? null;
@@ -24,7 +24,7 @@
                 @include('partials.usluga')
             @endforeach
             @if ($link)
-            <div class="col-span-full flex items-center justify-center">
+            <div class="col-span-full flex items-center justify-center max-lg:mt-6" data-aos="fade-up">
                 <div class="inline-flex">
                     <a href="{{ $link['url'] }}" class="btn btn--primary"><span>{{ $link['title'] }}</span>@svg('images.icons.hand')</a>
                 </div>

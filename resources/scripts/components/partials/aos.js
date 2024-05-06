@@ -6,6 +6,7 @@ export function initAOS() {
         offset: 0,
         duration: 500,
         easing: 'ease-in-out',
+        once: true,
     });
     
 }
