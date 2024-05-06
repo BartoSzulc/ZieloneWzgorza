@@ -25,8 +25,12 @@ class Home extends Field
         $home
             ->addTab('hero', ['label' => 'Hero', 'placement' => 'left'])
                 ->addFields($this->get(Hero::class))
+                ->addRepeater('links-hero', ['label' => 'Linki', 'button_label' => 'Dodaj link'])
+                    ->addLink('link', ['label' => 'Link'])
+                ->endRepeater()
             ->addTab('intro', ['label' => 'Wstęp', 'placement' => 'left'])
                 ->addGroup('intro', ['label' => 'Wstęp'])
+                    ->addText('title', ['label' => 'Tytuł'])
                     ->addWysiwyg('content', ['label' => 'Treść'])
                     ->addWysiwyg('content_sec', ['label' => 'Treść druga'])
                 ->endGroup()

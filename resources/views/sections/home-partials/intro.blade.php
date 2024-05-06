@@ -1,5 +1,6 @@
 @php
     $data = get_field('intro');
+    $title = $data['title'] ?? null;
     $content = $data['content'] ?? null;
     $content_sec = $data['content_sec'] ?? null;
 
@@ -11,10 +12,15 @@
         <div class="grid grid-cols-12 gap-6">
             <div class="col-span-full max-lg:text-center lg:col-span-6 relative flex items-center justify-center">
                 
-                <div class="flex flex-col gap-30 relative z-10 lg:py-6 lg:pl-6 p-8">
+                <div class="flex flex-col gap-6 relative z-10 lg:py-6 lg:pl-6 p-8">
                     <div class="left-0 absolute w-[calc(100%+24px)] h-full bg-white lg:rounded-3xl lg:shadow-cien-1 top-0 max-lg:hidden">
 
                     </div>
+                    @if ($title)
+                    <h2 class="text-h2 font-bold relative z-10 font-primary" data-aos="fade-up">
+                        {!! $title !!}
+                    </h2>
+                    @endif
                     @if ($content)
                     <div class="text-B16 relative z-10" data-aos="fade-up">
                         {!! $content !!}

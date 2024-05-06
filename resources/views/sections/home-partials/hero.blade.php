@@ -4,6 +4,8 @@
     $title = $data['title'] ?? null;
     $subtitle = $data['subtitle'] ?? null;
     $type = $data['type'] ?? null;
+    $links = get_field('links-hero');
+
 @endphp
 @if ($image)
 
@@ -41,6 +43,20 @@
                 @endif
                 
             @endif
+            @if ($links)
+            <div class="w-full text-center flex items-center justify-center pt-6 gap-4 flex-wrap">
+                @php
+                    $i = 0;
+                @endphp
+                @foreach ($links as $link)
+                    <a href="{{ $link['link']['url'] }}" class="btn @if ($i % 2) btn--secondary @else btn--primary @endif">{{ $link['link']['title'] }} </a>
+                @php
+                    $i++;
+                @endphp
+                @endforeach
+            </div>
+            @endif
+           
         </div>
     </div>
 </section>

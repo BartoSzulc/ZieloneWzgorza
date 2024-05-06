@@ -17,6 +17,12 @@
 
     $zabiegi = get_field('zabiegi');
     $atrakcje = get_field('dodatkowe_atrakcje');
+
+    $form = get_field('form');
+    $title = $form['title'] ?? null;
+    $title_form = $form['title_form'] ?? null;
+    $shortcode = $form['shortcode'] ?? null;
+
 @endphp
 
 @if ($intro['content'])
@@ -92,6 +98,11 @@
       @endforeach
 
     </div>
+    @if ($offer['link'])
+    <div class="w-full text-center flex items-center justify-center pt-6 lg:pt-12">
+      <a href="{{ $offer['link']['url'] }}" class="btn btn--primary">{{ $offer['link']['title'] }} @svg('images.icons.arrow_white')</a>
+    </div>
+    @endif
   </div>
 </section>
 @endif
@@ -127,6 +138,11 @@
       </div>
       @endforeach
     </div>
+    @if ($zabiegi['link'])
+    <div class="w-full text-center flex items-center justify-center pt-6 lg:pt-12">
+      <a href="{{ $zabiegi['link']['url'] }}" class="btn btn--primary">{{ $zabiegi['link']['title'] }} @svg('images.icons.arrow_white')</a>
+    </div>
+    @endif
   </div>
 </section>
 @endif
@@ -163,8 +179,38 @@
       </div>
       @endforeach
     </div>
+    @if ($atrakcje['link'])
+    <div class="w-full text-center flex items-center justify-center pt-6 lg:pt-12">
+      <a href="{{ $atrakcje['link']['url'] }}" class="btn btn--primary">{{ $atrakcje['link']['title'] }} @svg('images.icons.arrow_white')</a>
+    </div>
+    @endif
   </div>
 </section>
 @endif
-
+@if ($shortcode)
+<section class="contact__form mt-12 lg:mt-72 pb-12 lg:pb-72 relative overflow-hidden" id="form">
+  <div class="container">
+    @if ($title)
+      <div class="col-span-full mb-8 text-center text-h2 font-primary" data-aos="fade-up">
+        <h2>{!! $title !!}</h2>
+      </div>
+    @endif
+      <div class="grid grid-cols-12 gap-6 relative">
+          <div class="col-span-full w-full lg:w-[calc((648/1128)*100%)] lg:absolute max-lg:-mb-[60%]">
+          <img class="rounded-3xl object-cover object-center w-full h-full" src="{{asset('images/contact-bg-2.png')}}" alt="">
+          </div>
+          <div class="col-span-full lg:col-span-8 lg:col-start-5 relative z-10">
+              <div class="bg-white rounded-3xl shadow-cien-1 px-6 py-6 lg:mt-[70px]">
+                  @if ($title_form)
+                  <div class="max-lg:text-center text-h3 font-primary mb-30 font-semibold" data-aos="fade-up">
+                      <h3>{!! $title_form !!}</h3>
+                  </div>
+                  @endif
+                  {!! do_shortcode($shortcode) !!}
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+@endif
 @endsection

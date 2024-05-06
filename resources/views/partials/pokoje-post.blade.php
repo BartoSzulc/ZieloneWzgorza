@@ -18,7 +18,7 @@ $availability = get_field('availability');
                     @php $galleryId = uniqid('gallery_'); @endphp
                     @if (has_post_thumbnail())
                     <div class="swiper-slide overflow-hidden rounded-2xl relative">
-                        <a class="glightbox" href="{!! wp_get_attachment_image_url($image, 'full') !!}" data-gallery="{{ $galleryId }}">
+                        <a class="glightbox" href="{!! get_the_post_thumbnail_url(null, 'full') !!}" data-gallery="{{ $galleryId }}">
                             {!! get_the_post_thumbnail(null, 'full', ['class' => 'hover:scale-110 transition-all duration-500 ease-in-out object-cover object-center aspect-[1/1] max-xs:h-[300px] xs:max-w-[360px] rounded-2xl']) !!}
                         </a>
                     </div>
